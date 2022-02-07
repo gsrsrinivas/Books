@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Difference Between Preemptive and Non-Preemptive Scheduling in OS\par
+December 15, 2016 12 Comments\par
+\par
+preemptive-vs-non-preemptive-schedulingIt is the responsibility of CPU scheduler to allot a process to CPU whenever the CPU is in the idle state. The CPU scheduler selects a process from ready queue and allocates the process to CPU. The scheduling which takes place when a process switches from running state to ready state or from waiting state to ready state is called Preemptive Scheduling. On the hands, the scheduling which takes place when a process terminates or switches from running to waiting for state this kind of CPU scheduling is called Non-Preemptive Scheduling.\par
+\par
+\par
+ \par
+The basic difference between preemptive and non-preemptive scheduling lies in their name itself. That is a Preemptive scheduling can be preempted; the processes can be scheduled. In Non-preemptive scheduling, the processes can not be scheduled.\par
+\par
+Let us discuss the differences between the both Preemptive and Non-Preemptive Scheduling in brief with the help of comparison chart shown below.\par
+\par
+Content: Preemptive Vs Non-Preemptive Scheduling\par
+Comparison Chart\par
+Definition\par
+Key Differences\par
+Conclusion\par
+\par
+Comparison Chart\par
+BASIS FOR COMPARISON\tab PREEMPTIVE SCHEDULING\tab NON PREEMPTIVE SCHEDULING\par
+Basic\tab The resources are allocated to a process for a limited time.\tab Once resources are allocated to a process, the process holds it till it completes its burst time or switches to waiting state. \par
+Interrupt\tab Process can be interrupted in between.\tab Process can not be interrupted till it terminates or switches to waiting state.\par
+Starvation\tab If a high priority process frequently arrives in the ready queue, low priority process may starve.\tab If a process with long burst time is running CPU, then another process with less CPU burst time may starve.\par
+Overhead\tab Preemptive scheduling has overheads of scheduling the processes.\tab Non-preemptive scheduling does not have overheads.\par
+Flexibility\tab Preemptive scheduling is flexible.\tab Non-preemptive scheduling is rigid.\par
+Cost\tab Preemptive scheduling is cost associated.\tab Non-preemptive scheduling is not cost associative.\par
+\par
+ \par
+Definition of Preemptive Scheduling\par
+Preemptive scheduling is one which can be done in the circumstances when a process switches from running state to ready state or from waiting state to ready state. Here, the resources (CPU cycles) are allocated to the process for the limited amount of time and then is taken away, and the process is placed back in the ready queue again if it still has CPU burst time remaining. The process stays in ready queue till it gets next chance to execute.\par
+\par
+If a process with high priority arrives in the ready queue, it does not have to wait for the current process to complete its burst time. Instead, the current process is interrupted in the middle of execution and is placed in the ready queue till the process with high priority is utilizing the CPU cycles. In this way, each process in the ready queue gets some time to run CPU. It makes the preemptive scheduling flexible but, increases the overhead of switching the process from running state to ready state and vise-verse.\par
+\par
+Algorithms that work on preemptive scheduling are Round Robin. Shortest Job First (SJF) and Priority scheduling may or may not come under preemptive scheduling.\par
+\par
+Let us take an example of Preemptive Scheduling, look in the picture below. We have four processes P0, P1, P2, P3. Out of which, P2 arrives at time 0. So the CPU is allocated to the process P2 as there is no other process in the queue. Meanwhile, P2 was executing, P3 arrives at time 1, now the remaining time for process P2 (5 milliseconds) which is larger than the time required by P3 (4 milli-sec). So CPU is allocated to processor P3.preemptive_schedulingMeanwhile, P3 was executing, process P1 arrives at time 2. Now the remaining time for P3 (3 milliseconds) is less than the time required by processes P1 (4 milliseconds) and P2 (5 milliseconds). So P3 is allowed to continue. While P3 is continuing process P0 arrives at time 3, now the remaining time for P3 (2 milliseconds) is equal to the time required by P0 (2 milliseconds). So P3 continues and after P3 terminates the CPU is allocated to P0 as it has less burst time than other. After P0 terminates, the CPU is allocated to P1 and then to P2.\par
+\par
+Definition of Non-Preemptive Scheduling\par
+Non-preemptive Scheduling is one which can be applied in the circumstances when a process terminates, or a process switches from running to waiting state. In Non-Preemptive Scheduling, once the resources (CPU) is allocated to a process, the process holds the CPU till it gets terminated or it reaches a waiting state.\par
+\par
+Unlike preemptive scheduling, non-preemptive scheduling does not interrupt a process running CPU in middle of the execution. Instead, it waits for the process to complete its CPU burst time and then it can allocate the CPU to another process.\par
+\par
+\par
+ \par
+In Non-preemptive scheduling, if a process with long CPU burst time is executing then the other process will have to wait for a long time which increases the average waiting time of the processes in the ready queue. However, the non-preemptive scheduling does not have any overhead of switching the processes from ready queue to CPU but it makes the scheduling rigid as the process in execution is not even preempted for a process with higher priority.non-preemptive_schedulingLet us solve the above scheduling example in non-preemptive fashion. As initially the process P2 arrives at time 0, so CPU is allocated to the process P2 it takes 6 milliseconds to execute. In between all the processes i.e. P0, P1, P3 arrives into ready queue. But all waits till process P2 completes its CPU burst time. Then process that arrives after P2 i.e. P3 is then allocated the CPU till it finishes it\rquote s burst time. Similarly, then P1 executes, and CPU is later given to process P0.\par
+\par
+\par
+Key Differences Between Preemptive and Non-Preemptive Scheduling\par
+The basic difference between preemptive and non-preemptive scheduling is that in preemptive scheduling the CPU is allocated to the processes for the limited time. While in Non-preemptive scheduling, the CPU is allocated to the process till it terminates or switches to waiting state.\par
+The executing process in preemptive scheduling is interrupted in the middle of execution whereas, the executing process in non-preemptive scheduling is not interrupted in the middle of execution.\par
+Preemptive Scheduling has the overhead of switching the process from ready state to running state, vise-verse, and maintaining the ready queue. On the other hands, non-preemptive scheduling has no overhead of switching the process from running state to ready state.\par
+In preemptive scheduling, if a process with high priority frequently arrives in the ready queue then the process with low priority have to wait for a long, and it may have to starve. On the other hands, in the non-preemptive scheduling, if CPU is allocated to the process with larger burst time then the processes with small burst time may have to starve.\par
+Preemptive scheduling is quite flexible because the critical processes are allowed to access CPU as they arrive into the ready queue, no matter what process is executing currently. Non-preemptive scheduling is rigid as even if a critical process enters the ready queue the process running CPU is not disturbed.\par
+The Preemptive Scheduling is cost associative as it has to maintain the integrity of shared data which is not the case with Non-preemptive Scheduling.\par
+\par
+Conclusion:\par
+It is not that preemptive scheduling is better than non-preemptive scheduling or vise-verse. All depends on how a scheduling minimizes the average waiting time of the processes and maximizes CPU utilization.\par
+}
+ 

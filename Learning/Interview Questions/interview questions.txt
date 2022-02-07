@@ -1,0 +1,5 @@
+what is data classification?
+
+A data classification policy provides a way to ensure that sensitive information is handled according to the risk that it poses the organization, the types of sensitive information handled by the organization and compliance requirements.
+
+
