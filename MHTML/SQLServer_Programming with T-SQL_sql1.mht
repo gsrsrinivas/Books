@@ -1,0 +1,689 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: 
+Date: Thu, 14 Dec 2006 17:17:31 +0530
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://mkdcdserver.wipro.com/SQL%20Server%202000/SQL%20Server%202000%20Bible/ChapterCode/Ch%2012%20-%20Programming%20with%20T-SQL.sql
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2962
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dwindows-1252">
+<META content=3D"MSHTML 6.00.2900.2995" name=3DGENERATOR></HEAD>
+<BODY><PRE>-----------------------------------------------------------
+-- SQL Server 2000 Bible=20
+-- Wiley Publishing=20
+-- Paul Nielsen
+
+-- Chapter  12 - Programming with T-SQL
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+-- executing a stored procedure with EXEC
+sp_help
+EXEC sp_help
+
+-- the is an ANSI style comment
+Select FirstName, LastName   -- selects the columns
+  FROM Person                     -- the source table
+  Where LastName Like 'Hol*' -- the row restriction
+
+-- C style comments
+/*=20
+Order table Insert Trigger
+Paul Nielsen
+ver 1.0 Sept 1, 1998
+Logic: etc.=20
+ver 1.1: Nov. 19, 1998
+*/
+Set NoCount ON
+
+
+/*  =20
+go
+*/
+
+
+-- Debug Commands
+Select 3
+Print 6
+
+Print 'Begining'=20
+waitfor delay '00:00:02'
+Print 'Done'=20
+
+-------------------------------------------------
+-- Variables
+
+-- Declaring variables
+DECLARE  @Test INT,
+         @TestTwo NVARCHAR(25)
+SELECT @Test, @TestTwo=20
+
+SET @Test =3D 1
+SET @TestTwo =3D 'a value'
+SELECT @Test, @TestTwo=20
+go --terminates the variables
+
+SELECT @Test as BatchTwo, @TestTwo =20
+
+-- Set and Select
+USE Family
+SELECT PersonID FROM Person=20
+
+-- multiple rows &amp; multiple columns
+Declare @TempID INT,
+           @TempLastName VARCHAR(25)
+SET @TempID =3D 99
+SELECT @TempID =3D PersonID,
+    @TempLastName =3D LastName
+  FROM Person=20
+  ORDER BY PersonID
+SELECT @TempID, @TempLastName
+ =20
+-- No rows returned
+Declare @TempID INT,
+           @TempLastName VARCHAR(25)
+SET @TempID =3D 99
+SELECT @TempID =3D PersonID,
+    @TempLastName =3D LastName
+  FROM Person=20
+  WHERE PersonID =3D 100
+  ORDER BY PersonID
+SELECT @TempID, @TempLastName
+
+-- same as
+Declare @TempID INT,
+           @TempLastName VARCHAR(25)
+SET @TempID =3D 99
+IF 1=3D0
+SELECT @TempID =3D PersonID,
+    @TempLastName =3D LastName
+  FROM Person=20
+  ORDER BY PersonID
+SELECT @TempID, @TempLastName
+
+-- Variables within a query
+USE OBXKites
+
+DECLARE @ProductCode CHAR(10)
+SET @ProductCode =3D '1001'
+
+SELECT ProductName=20
+  FROM Product
+  WHERE Code =3D @ProductCode
+
+
+---------------------------------------------------------
+-- Procedural Flow
+
+-- If=20
+If 1 =3D 0
+  Print 'Line One'
+Print 'Line Two'
+
+-- IF Exists
+USE OBXKITES
+IF EXISTS(SELECT * FROM [ORDER] WHERE Closed =3D 0)
+  BEGIN
+    Print 'Process Orders'
+  END
+
+-- While
+Declare @Temp Int
+Set @Temp =3D 0
+
+While @Temp &lt;3
+  Begin
+    Print 'tested condition' + Str(@Temp)
+    Set @Temp =3D @Temp + 1
+  End
+
+-- goto
+GOTO ErrorHandler
+Print 'more code'
+ErrorHandler:=20
+Print 'Logging the error'=20
+
+-----------------------------------------------------
+-- Examining SQL Server with Code
+
+-- sp_help
+sp_help price
+
+-- Global Variables=20
+Select @@Connections=09
+Select @@CPU_Busy=09
+Select @@Cursor_Rows=09
+Select @@DateFirst=09
+Select @@DBTS=09
+Select @@Error=09
+Select @@Fetch_Status=09
+Select @@Identity=09
+Select @@Idle=09
+Select @@IO_Busy=09
+Select @@LangID=09
+Select @@Language=09
+Select @@Lock_TimeOut=09
+Select @@Max_Connections=09
+Select @@Max_Precision=09
+Select @@Nestlevel=09
+Select @@Options=09
+Select @@Pack_Received=09
+Select @@Pack_Sent=09
+Select @@Packet_Errors=09
+Select @@ProcID=09
+Select @@RemServer=09
+Select @@RowCount=09
+Select @@ServerName=09
+Select @@ServiceName=09
+Select @@SPID=09
+Select @@TextSize=09
+Select @@TimeTicks=09
+Select @@Total_Errors=09
+Select @@Total_Read=09
+Select @@Total_Write=09
+Select @@TranCount=09
+Select @@Version=09
+
+---------------------------------------------------
+-- Temp Tables &amp; Table Variables
+
+CREATE TABLE #ProductTemp (
+  ProductID INT PRIMARY KEY
+  )
+
+SELECT Name=20
+  FROM TempDB.dbo.SysObjects
+  WHERE Name Like '#Pro%'
+
+-- Global Temp Table
+IF NOT EXISTS(
+  SELECT * FROM Tempdb.dbo.Sysobjects=20
+    WHERE Name =3D '##TempWork')
+CREATE TABLE ##TempWork(
+  PK INT,
+  Col1 INT
+)
+
+-- Table Variable
+DECLARE @WorkTable TABLE (
+  PK INT PRIMARY KEY,
+  Col1 INT NOT NULL)
+
+INSERT INTO @WorkTable (PK, Col1)
+  VALUES ( 1, 101)
+
+SELECT PK, Col1=20
+  FROM @WorkTable
+
+
+----------------------------------------------------------------
+-- Dynamic SQL=20
+
+-- Simple EXEC
+USE Family
+EXEC ('Select LastName from Person Where PersonID =3D 12')
+
+-- sp_executeSQL
+EXEC sp_executeSQL=20
+  N'Select LastName from Person Where PersonID =3D @PersonSelect',
+  N'@PersonSelect INT',=20
+  @PersonSelect =3D 12
+
+-----------------------
+-- Developing Dynamic SQL
+USE OBXKites
+
+DECLARE=20
+  @SQL NVARCHAR(1024),
+  @SQLWhere NVARCHAR(1024),
+  @NeedsAnd BIT,=20
+
+-- User Parameters
+  @ProductName VARCHAR(50),
+  @ProductCode VARCHAR(10),
+  @ProductCategory VARCHAR(50)
+
+-- Initilize Variables
+SET @NeedsAnd =3D 0=20
+SET @SQLWhere =3D ''
+
+-- Simulate User's Requirements
+SET @ProductName =3D NULL
+SET @ProductCode =3D 1001
+SET @ProductCategory =3D NULL
+
+-- Assembly Dynamic SQL=20
+
+-- Set up initial SQL Select
+IF @ProductCategory IS NULL=20
+  SET @SQL =3D 'Select ProductName from Product'
+ELSE
+  SET @SQL =3D 'Select ProductName from Product=20
+                        Join ProductCategory=20
+                        on Product.ProductCategoryID=20
+                        =3D ProductCategory.ProductCategoryID'
+
+-- Build the Dynamic Where Clause
+IF @ProductName IS NOT NULL=20
+  BEGIN
+    SET @SQLWhere =3D 'ProductName =3D ' + @ProductName
+    SET @NeedsAnd =3D 1
+  END
+
+ IF @ProductCode IS NOT NULL=20
+  BEGIN
+    IF @NeedsAnd =3D 1=20
+      SET @SQLWhere =3D @SQLWhere + ' and '=20
+    SET @SQLWhere =3D 'Code =3D ' + @ProductCode
+    SET @NeedsAnd =3D 1
+  END
+
+ IF @ProductCategory IS NOT NULL
+  BEGIN
+    IF @NeedsAnd =3D 1=20
+      SET @SQLWhere =3D @SQLWhere + ' and '=20
+    SET @SQLWhere =3D 'ProductCategory =3D ' + @ProductCategory
+    SET @NeedsAnd =3D 1
+  END
+
+-- Assemble the select and the where portions of the dynamic SQL=20
+IF @NeedsAnd =3D 1
+  SET @SQL =3D @SQL + ' where ' + @SQLWhere
+
+Print @SQL
+
+EXEC sp_executeSQL @SQL=20
+  WITH RECOMPILE
+
+
+--------------------------------------------------
+-- Recursive Select Variables
+
+-- Denormalizing a List
+USE CHA2
+DECLARE=20
+  @EventDates VARCHAR(1024)
+SET @EventDates =3D ''
+
+SELECT @EventDates =3D @EventDates + CONVERT(VARCHAR(15), a.d,107 ) + '; =
+ '=20
+      FROM (Select DateBegin as [d] FROM Event=20
+        JOIN Tour
+          ON Event.TourID =3D Tour.TourID
+        WHERE Tour.[Name] =3D 'Outer Banks Lighthouses') as a
+
+SELECT Left(@EventDates, Len(@EventDates)-1) AS 'Outer Banks Lighthouses =
+Events'=20
+
+-- Dynamic Crosstab query=20
+USE TempDB
+
+DECLARE   @XColumns NVARCHAR(1024)
+SET @XColumns =3D ''
+SELECT @XColumns =3D @XColumns  + ' SUM(Case X WHEN ''' + [a].[Column] + =
+''' THEN Data ELSE 0 END) AS ' + [a].[Column] + ','
+  FROM=20
+    (SELECT DISTINCT X as [Column]
+      FROM RawData  ) as a
+SET @XColumns =3D 'SELECT Y,' + @XColumns + ' SUM(Data) as Total FROM =
+RawData GROUP BY Y ORDER BY Y'
+SELECT @XColumns
+EXEC sp_executesql @XColumns
+
+---------------------------------------------------
+-- Cursors
+
+-- Cursor default scope
+
+ALTER DATABASE Family SET CURSOR_DEFAULT LOCAL
+
+SELECT  DATABASEPROPERTYEX('Family', 'IsLocalCursorsDefault')
+
+-- This cursor example is for comparison with the Recursive Select =
+Variable code
+-- List the event dates for a tour
+
+--Denormalizing a List with a Cursor
+USE CHA2
+
+-- Check the data
+SELECT DateBegin
+  FROM Event=20
+    JOIN Tour
+      ON Event.TourID =3D Tour.TourID
+    WHERE Tour.[Name] =3D 'Outer Banks Lighthouses'
+
+-- The cursor batch
+USE CHA2
+DECLARE=20
+  @EventDates VARCHAR(1024),
+  @EventDate DATETIME,
+  @SemiColon BIT
+
+SET @Semicolon =3D 0
+SET @EventDates =3D ''
+
+DECLARE cEvent CURSOR FAST_FORWARD
+  FOR SELECT DateBegin
+      FROM Event=20
+        JOIN Tour
+          ON Event.TourID =3D Tour.TourID
+        WHERE Tour.[Name] =3D 'Outer Banks Lighthouses'
+
+  OPEN cEvent
+  FETCH cEvent INTO @EventDate  -- prime the cursor
+
+  WHILE @@Fetch_Status =3D 0=20
+    BEGIN
+      IF @Semicolon =3D 1
+        SET @EventDates =3D @EventDates + '; ' + Convert(VARCHAR(15), =
+@EventDate, 107 )
+      ELSE=20
+        BEGIN
+          SET @EventDates =3D Convert(VARCHAR(15), @EventDate,107 )
+          SET @SEMICOLON =3D 1
+        END
+      =20
+        FETCH cEvent INTO @EventDate  -- fetch next
+    END
+  CLOSE cEvent
+DEALLOCATE cEvent
+
+SELECT @EventDates
+
+
+--Building a Crosstab with Dynamic SQL and a Cursor
+
+-- Build the sample data (code from Chapter 10)
+USE TempDB
+
+IF EXISTS(SELECT * FROM SysObjects WHERE Name =3D 'RawData')
+  DROP TABLE RawData
+go
+
+CREATE TABLE RawData (
+  X VARCHAR(2),
+  Y VARCHAR(2),
+  Data INT )
+go
+
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'X', 1)
+INSERT RawData (X,Y,Data)
+  VALUES( 'B', 'X', 2)
+INSERT RawData (X,Y,Data)
+  VALUES( 'C', 'X', 3)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'Y', 4)
+INSERT RawData (X,Y,Data)
+  VALUES( 'B', 'Y', 5)
+INSERT RawData (X,Y,Data)
+  VALUES( 'D', 'Y', 6)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'Z', 7)
+INSERT RawData (X,Y,Data)
+  VALUES( 'B', 'Z', 8)
+INSERT RawData (X,Y,Data)
+  VALUES( 'C', 'Z', 9)
+INSERT RawData (X,Y,Data)
+  VALUES( 'D', 'Z', 10)
+
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'X', 2)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'X', 3)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'Y', 2)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'Y', 5)
+INSERT RawData (X,Y,Data)
+  VALUES( 'A', 'Y', 1)
+INSERT RawData (X,Y,Data)
+  VALUES( 'D', 'Y', 50)
+
+-- check the data
+SELECT * FROM RawData
+
+-- Fixed Column CrossTab with Y Subtotal
+USE TempDB
+SELECT Y,
+  SUM(Case X WHEN 'A' THEN Data ELSE 0 END) AS A,
+  SUM(Case X WHEN 'B' THEN Data ELSE 0 END) AS B,
+  SUM(Case X WHEN 'C' THEN Data ELSE 0 END) AS C,
+  SUM(Case X WHEN 'D' THEN Data ELSE 0 END) AS D,
+  SUM(Data) as Total
+  FROM RawData
+  GROUP BY Y
+  ORDER BY Y
+
+-- CrossTab with Dynamic X Using Cursor
+DECLARE=20
+  @XColumns NVARCHAR(1024),
+  @XColumn VARCHAR(50),
+  @SemiColon BIT
+
+SET @Semicolon =3D 0
+SET @XColumns =3D ''
+
+DECLARE ColNames CURSOR FAST_FORWARD=20
+  FOR=20
+  SELECT DISTINCT X as [Column]
+    FROM RawData
+    ORDER BY X
+
+  OPEN ColNames
+
+  FETCH ColNames INTO @XColumn
+  WHILE @@Fetch_Status =3D 0=20
+    BEGIN
+        SET @XColumns =3D @XColumns  + ', SUM(Case X WHEN ''' + @XColumn =
++ ''' THEN Data ELSE 0 END) AS ' + @XColumn
+        FETCH ColNames INTO @XColumn  -- fetch next
+    END
+  CLOSE ColNames
+DEALLOCATE ColNames
+
+SET @XColumns =3D 'SELECT Y' + @XColumns + ', SUM(Data) as Total FROM =
+RawData GROUP BY Y ORDER BY Y'
+
+EXEC sp_executesql  @XColumns=20
+
+
+-- Navigating a Tree with a Recursive Cursor
+USE Family
+--Check the data
+SELECT=20
+    Person.FirstName + ' ' + IsNull(Person.SrJr,'') as Grandfather,=20
+    Gen1.FirstName  + ' ' +  IsNull(Gen1.SrJr,'') as Gen1,=20
+    Gen2.FirstName  + ' ' +  IsNull(Gen2.SrJr,'') as Gen2
+  FROM Person
+    Left JOIN Person Gen1
+      ON Person.PersonID =3D Gen1.FatherID
+    left JOIN Person Gen2
+      ON Gen1.PersonID =3D Gen2.FatherID
+  WHERE Person.PersonID =3D 2
+  ORDER BY Person.DateofBirth, Gen1.DateOfBirth, Gen2.DateofBirth
+
+go
+
+-- Set the cursor scope to local to prevent the recursive cursor from =
+bombing
+ALTER DATABASE Family SET CURSOR_DEFAULT LOCAL
+SELECT  DATABASEPROPERTYEX('Family', 'IsLocalCursorsDefault')  =20
+go
+-- the Recursive Cursor
+-- For the current person examine all the children=20
+CREATE PROCEDURE ExamineChild (@ParentID INT)
+AS
+SET Nocount On
+DECLARE @ChildID INT,
+  @Childname VARCHAR(25)
+
+DECLARE cChild CURSOR LOCAL FAST_FORWARD
+  FOR SELECT PersonID, Firstname + ' ' + LastName + ' ' + =
+IsNull(SrJr,'') as PersonName
+      FROM Person
+      WHERE Person.FatherID =3D @ParentID
+        OR Person.MotherID =3D @ParentID
+      ORDER BY Person.DateOfBirth
+  OPEN cChild
+  FETCH cChild INTO @ChildID, @ChildName  -- prime the cursor
+  WHILE @@Fetch_Status =3D 0=20
+    BEGIN
+      PRINT=20
+        SPACE(@@NestLevel * 2) + '+ '=20
+          + Cast(@ChildID as VARCHAR(4)) + ' '=20
+          + @ChildName
+      -- Recursively find the grandchildren
+      EXEC ExamineChild @ChildID
+      FETCH cChild INTO @ChildID, @ChildName=20
+    END
+  CLOSE cChild
+DEALLOCATE cChild
+
+-- there will be an error while creating this procedure
+-- because SQL Server can not establish a dependency
+-- between ExamineChild on ExamineChild=20
+-- because ExamineChild does not yet exist when the=20
+-- procedure is created.=20
+
+
+-- execute the recursive cursor stored procedure
+EXEC ExamineChild 2
+
+--------------------------------------
+-- Navigating a Recursive Tree using a Set-based solution
+
+CREATE TABLE #FamilyTree (
+  PersonID INT,
+  Generation INT,
+  FamilyLine VarChar(25) Default ''
+  )
+
+delete #FamilyTree
+
+DECLARE=20
+  @Generation INT,
+  @FirstPerson INT
+ =20
+SET @Generation =3D 1
+SET @FirstPerson =3D 2
+
+-- prime the temp table with the top person(s) in the queue
+INSERT #FamilyTree (PersonID, Generation, FamilyLine)
+  SELECT @FirstPerson, @Generation, @FirstPerson
+WHILE @@RowCount &gt; 0
+  BEGIN=20
+    SET @Generation =3D @Generation + 1
+ =20
+    INSERT #FamilyTree (PersonID, Generation, FamilyLine)
+      SELECT Person.PersonID,=20
+             @Generation,=20
+             #FamilyTree.FamilyLine=20
+             + ' ' + Str(Person.PersonID,5)
+        FROM Person=20
+          JOIN #FamilyTree
+            ON #FamilyTree.Generation =3D @Generation - 1
+              AND=20
+              (Person.MotherID =3D #FamilyTree.PersonID
+                OR=20
+               Person.FatherID =3D #FamilyTree.PersonID)
+  END
+
+
+SELECT PersonID, Generation, FamilyLine
+  FROM #FamilyTree
+  Order by FamilyLine
+
+
+SELECT SPACE(Generation * 2) + '+ '=20
+          + Cast(#FamilyTree.PersonID as VARCHAR(4)) + ' '=20
+          + FirstName + ' ' + LastName + ' ' + IsNull(SrJr,'')=20
+          AS FamilyTree
+  FROM #FamilyTree
+    JOIN Person=20
+      ON #FamilyTree.PersonID =3D Person.PersonID
+  ORDER BY FamilyLine
+
+----------------------------------------------------------
+-- Error Handling
+
+USE Family
+UPDATE Person=20
+  SET PersonID =3D 1=20
+  Where PersonID =3D 2
+Print @@Error
+Print @@Error
+
+-- saving @@error to alocal variable
+USE Family
+DECLARE @err INT
+
+UPDATE Person=20
+  SET PersonID =3D 1=20
+  Where PersonID =3D 2
+SET @err =3D @@Error
+
+IF @err &lt;&gt; 0=20
+  Begin
+    -- error handling code
+    Print @err
+  End
+
+-- Using @RowCount
+USE FAMILY
+UPDATE Person
+  SET LastName =3D 'Johnson'
+  WHERE PersonID =3D 100
+
+IF @@RowCount =3D 0=20
+  Begin
+    -- error handling code
+    Print 'no rows affected'
+  End
+
+-- Fatal Errors
+SELECT Error, Severity, Description
+  FROM Master.dbo.SysMessages
+  WHERE Severity &gt; 16
+
+-- Rasierror simple form=20
+RAISERROR 5551212  'Unable to update Customer'=20
+
+-- Raiserror Windows Form=20
+RAISERROR('Unable to update Customer', 14, 1)
+
+-- Severity
+RAISERROR('Print', 10,1)
+RAISERROR('Info', 14,1)
+RAISERROR('Warning', 15,1)
+RAISERROR('Critical', 16,1)
+
+--  Messages Arguments
+RAISERROR ('Unable to update %s.', 14, 1, 'Customer')
+
+-- Stored Messages
+EXEC sp_addmessage 50001, 16, 'Unable to update %s'
+
+EXEC sp_addmessage 50001, 16, 'Still unable to update %s', @Replace =3D =
+'Replace'
+
+SELECT 'EXEC sp_addmessage, '=20
+    + Cast(Error as VARCHAR(7))=20
+    + ', ' + Cast(Severity as VARCHAR(2))=20
+    + ', ''' + [Description] +  ''''=20
+  FROM Master.dbo.SysMessages
+  WHERE Error &gt; 50000
+
+EXEC sp_dropmessage 50001
+
+-- With Log
+RAISERROR ('Unable to update %s.', 14, 1, 'Customer')=20
+  WITH LOG
+</PRE></BODY></HTML>

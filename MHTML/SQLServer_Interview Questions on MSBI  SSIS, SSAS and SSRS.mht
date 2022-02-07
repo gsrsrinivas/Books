@@ -1,0 +1,1954 @@
+From: "Saved by Windows Internet Explorer 10"
+Subject: Interview Questions on MSBI | SSIS, SSAS and SSRS
+Date: Mon, 9 Dec 2013 19:44:21 +0530
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CEF517.0E488650"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.2.9200.16384
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CEF517.0E488650
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://sqlschool.com/MSBI_Interview_Questions.html
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" =
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META =
+content=3D"IE=3D10.000"=20
+http-equiv=3D"X-UA-Compatible">
+ <LINK href=3D"images/animated_favicon1.gif" rel=3D"shortcut icon">=20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8">=20
+<TITLE>Interview Questions on MSBI | SSIS, SSAS and SSRS</TITLE>=20
+<META name=3D"description" content=3D"Sample Interview Questions for =
+Integration Services, Analysis Services and Reporting Services and =
+MSBI">=20
+<META name=3D"KEYWORDS" content=3D"Interview Questions , BI, MSBI, =
+BUSINESS INTELLIGENCE, Business Intelligence, MDX, XMLA, Gauge Reports =
+">=20
+<META http-equiv=3D"Content-Language" content=3D"EN">=20
+<META name=3D"section" content=3D"sql">=20
+<META name=3D"author" content=3D"SQLCourse">=20
+<META name=3D"verify-v1" =
+content=3D"7fjmHi7MMlbeWOyLP6yFbK74qL+mpP6ezGMG3h8jBpo=3D">=20
+<LINK href=3D"http://sqlschool.com/styles/global.css" rel=3D"stylesheet" =
+type=3D"text/css">=20
+<LINK href=3D"http://sqlschool.com/styles/anylinkcssmenu.css" =
+rel=3D"stylesheet"=20
+type=3D"text/css">=20
+<SCRIPT src=3D"http://sqlschool.com/scripts/anylinkcssmenu.js" =
+type=3D"text/javascript"></SCRIPT>
+=20
+<SCRIPT type=3D"text/javascript">=0A=
+	anylinkcssmenu.init("anchorclass")=0A=
+</SCRIPT>
+=20
+<STYLE type=3D"text/css">=0A=
+p.pos_fixed=0A=
+{=0A=
+position:fixed;=0A=
+bottom:0px;=0A=
+right:1px;=0A=
+}=0A=
+</STYLE>
+=20
+<META name=3D"GENERATOR" content=3D"MSHTML 10.00.9200.16540"></HEAD>=20
+<BODY>
+<DIV class=3D"header" style=3D"text-align: justify;"><A =
+class=3D"headerTitle" href=3D"http://sqlschool.com/index.html">SQL=20
+Server Training</A>
+<DIV class=3D"navigation">
+<UL>
+  <LI><A href=3D"http://sqlschool.com/index.html"><B>Home</B></A></LI>
+  <LI><A class=3D"anchorclass" rel=3D"submenu0"><B> T-SQL =
+Training<BR></B></A></LI>
+  <LI><A class=3D"anchorclass" rel=3D"submenu1"><B>SQL DBA =
+Training<BR></B></A></LI>
+  <LI><A class=3D"anchorclass active" rel=3D"submenu2"><B>MSBI=20
+  Training<BR></B></A></LI>
+  <LI><A href=3D"http://sqlschool.com/about.html"><B>About =
+Us</B></A></LI>
+  <LI><A=20
+  =
+href=3D"http://sqlschool.com/TrainingFeedback.html"><B>Testimonials</B></=
+A></LI>
+  <LI><A href=3D"http://sqlschool.com/contact.html"><B>Contact=20
+Us</B></A></LI></UL></DIV>
+<DIV class=3D"anylinkcss" id=3D"submenu0">
+<UL>
+  <LI><A href=3D"http://sqlschool.com/T-SQL_Online_Training.html">Online =
+
+  Training</A></LI>
+  <LI><A =
+href=3D"http://sqlschool.com/T-SQL_Classroom_Training.html">Classroom=20
+  Training</A></LI>
+  <LI><A =
+href=3D"http://sqlschool.com/T-SQL_Corp_Training.html">Corporate=20
+  Training</A></LI>
+  <LI><A href=3D"http://sqlschool.com/T-SQL_Video_Training.html">Video =
+Training=20
+  (VBT)</A></LI></UL></DIV>
+<DIV class=3D"anylinkcss" id=3D"submenu1">
+<UL>
+  <LI><A =
+href=3D"http://sqlschool.com/SQLDBA_Online_Training.html">Online=20
+  Training</A></LI>
+  <LI><A =
+href=3D"http://sqlschool.com/SQLDBA_Classroom_Training.html">Classroom=20
+  Training</A></LI>
+  <LI><A =
+href=3D"http://sqlschool.com/SQLDBA_Corp_Training.html">Corporate=20
+  Training</A></LI>
+  <LI><A href=3D"http://sqlschool.com/SQLDBA_Video_Training.html">Video =
+Training=20
+  (VBT)</A></LI></UL></DIV>
+<DIV class=3D"anylinkcss" id=3D"submenu2">
+<UL>
+  <LI><A href=3D"http://sqlschool.com/MSBI_Online_Training.html">Online=20
+  Training</A></LI>
+  <LI><A =
+href=3D"http://sqlschool.com/MSBI_Classroom_Training.html">Classroom=20
+  Training</A></LI>
+  <LI><A href=3D"http://sqlschool.com/MSBI_Corp_Training.html">Corporate =
+
+  Training</A></LI>
+  <LI><A href=3D"http://sqlschool.com/MSBI_Video_Training.html">Video =
+Training=20
+  (VBT)</A></LI></UL></DIV>
+<DIV class=3D"clearfloat"></DIV></DIV>
+<DIV class=3D"contentTop_full" style=3D"text-align: justify;"></DIV>
+<DIV class=3D"sectionContent_full" style=3D"text-align: justify;">
+<H3>FAQs - SSIS, SSAS and SSRS</H3>
+<H4>SSIS - SQL Server Integration Services</H4>
+<P><B>Q: What is SSIS? How it related with SQL Server.</B><BR> SQL =
+Server=20
+Integration Services (<B>SSIS</B>) is a component of SQL Server which =
+can be=20
+used to perform a wide range of Data Migration and ETL operations. SSIS =
+is a=20
+component in MSBI process of SQL Server. <BR> This is a platform for =
+Integration=20
+and Workflow applications. It is known for a fast and flexible OLTP and =
+OLAP=20
+extensions used for data extraction, transformation, and loading (<A =
+title=3D"Extract, transform, load"=20
+href=3D"http://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</A>). =
+The tool=20
+may also be used to automate maintenance of SQL Server databases and=20
+multidimensional data sets.</P>
+<P><B>Q: What are the tools associated with SSIS?</B><BR> We use =
+Business=20
+Intelligence Development Studio (BIDS) and SQL Server Management Studio =
+(SSMS)=20
+to work with Development of SSIS Projects.<BR> We use SSMS to manage the =
+SSIS=20
+Packages and Projects.</P>
+<P><B>Q: What are the differences between DTS and SSIS </B></P>
+<TABLE border=3D"1" cellspacing=3D"0" cellpadding=3D"0">
+  <TBODY>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE><B>Data Transformation Services</B></PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE><B>SQL Server Integration Services</B></PRE></TD></TR>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Limited Error Handling</PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Complex and powerful Error Handling</PRE></TD></TR>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Message Boxes in ActiveX Scripts</PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Message Boxes in .NET Scripting </PRE></TD></TR>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE>No Deployment Wizard</PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Interactive Deployment Wizard</PRE></TD></TR>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Limited Set of Transformation</PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Good number of Transformations</PRE></TD></TR>
+  <TR>
+    <TD width=3D"295" valign=3D"top">
+<PRE>NO BI functionality</PRE></TD>
+    <TD width=3D"295" valign=3D"top">
+<PRE>Complete BI Integration</PRE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<P><B>Q: What is a workflow in SSIS ?</B><BR> Workflow is a set of =
+instructions=20
+on to specify the Program Executor on how to execute tasks and =
+containers within=20
+SSIS Packages.<BR><B>&nbsp;</B><BR><B>Q: What is the control flow? =
+</B></P>
+<P>A control flow consists of one or more tasks and containers that =
+execute when=20
+the package runs. To control order or define the conditions for running =
+the next=20
+task or container in the package control flow, we use precedence =
+constraints to=20
+connect the tasks and containers in a package. A subset of tasks and =
+containers=20
+can also be grouped and run repeatedly as a unit within the package =
+control=20
+flow. SQL Server 2005 Integration Services (SSIS) provides three =
+different types=20
+of control flow elements: Containers that provide structures in =
+packages, Tasks=20
+that provide functionality, and Precedence Constraints that connect the=20
+executables, containers, and tasks into an ordered control flow.</P>
+<P><B>Q: What is a data flow?</B> <BR> A <B>data flow</B> consists of =
+the=20
+sources and destinations that extract and load data, the transformations =
+that=20
+modify and extend data, and the paths that link sources, =
+transformations, and=20
+destinations The Data Flow task is the executable within the SSIS =
+package that=20
+creates, orders, and runs the data flow. A separate instance of the data =
+flow=20
+engine is opened for each Data Flow task in a package. Data Sources,=20
+Transformations, and Data Destinations are the three important =
+categories in the=20
+Data Flow.</P>
+<P><B>Q: How does Error-Handling work in SSIS</B><BR> When a data flow =
+component=20
+applies a transformation to column data, extracts data from sources, or =
+loads=20
+data into destinations, errors can occur. Errors frequently occur =
+because of=20
+unexpected data values.<BR><B>Type of typical Errors</B> in SSIS:<BR> =
+-<B>Data=20
+Connection Errors</B>, which occur incase the connection manager cannot =
+be=20
+initialized with the connection string. This applies to both Data =
+Sources and=20
+Data Destinations along with Control Flows that use the Connection =
+Strings.<BR>=20
+-<B>Data Transformation Errors</B>, which occur while data is being =
+transformed=20
+over a <B>Data Pipeline</B> from Source to Destination.<BR> =
+-<B>Expression=20
+Evaluation errors</B>, which occur if expressions that are evaluated at =
+run time=20
+perform invalid</P>
+<P><B>Q: What is environment variable in SSIS?</B><BR> An environment =
+variable=20
+configuration sets a package property equal to the value in an =
+environment=20
+variable.<BR> Environmental configurations are useful for configuring =
+properties=20
+that are dependent on the computer that is executing the package.</P>
+<P><B>Q: What are the Transformations available in=20
+SSIS?</B><BR><BR><B>AGGEGATE</B>&nbsp; - It applies aggregate functions =
+to=20
+Record Sets to produce new output records from aggregated=20
+values.<BR><B>AUDIT</B>&nbsp; - Adds Package and Task level Metadata - =
+such as=20
+Machine Name, Execution Instance, Package Name, Package ID, etc..=20
+<BR><B>CHARACTER</B> <B>MAP</B> - Performs SQL Server level makes string =
+data=20
+changes such as changing data from lower case to upper=20
+case.<BR><B>CONDITIONAL</B> <B>SPLIT</B> =E2=80=93 Separates available =
+input into=20
+separate output pipelines based on Boolean Expressions configured for =
+each=20
+output.<BR><B>COPY</B> <B>COLUMN</B> - Add a copy of column to the =
+output we can=20
+later transform the copy keeping the original for =
+auditing.<BR><B>DATA</B>=20
+<B>CONVERSION</B> - Converts columns data types from one to another =
+type. It=20
+stands for Explicit Column Conversion.<BR><B>DATA</B> <B>MINING</B> =
+<B>QUERY</B>=20
+=E2=80=93 Used to perform data mining query against analysis services =
+and manage=20
+Predictions Graphs and Controls.<BR><B>DERIVED</B> <B>COLUMN</B> - =
+Create a new=20
+(computed) column from given expressions.<BR><B>EXPORT</B> <B>COLUMN</B> =
+=E2=80=93 Used=20
+to export a Image specific column from the database to a flat=20
+file.<BR><B>FUZZY</B> <B>GROUPING</B> =E2=80=93 Used for data cleansing =
+by finding rows=20
+that are likely duplicates.<BR><B>FUZZY</B> <B>LOOKUP</B> - &nbsp;Used =
+for=20
+Pattern Matching and Ranking based on fuzzy logic.<BR><B>IMPORT</B>=20
+<B>COLUMN</B> - Reads image specific column from database onto a flat=20
+file.<BR><B>LOOKUP</B> - Performs the lookup (searching) of a given =
+reference=20
+object set against a data source. It is used for exact matches=20
+only.<BR><B>MERGE</B> - Merges two sorted data sets into a single data =
+set into=20
+a single data flow.<BR><B>MERGE</B> <B>JOIN</B> - Merges two data sets =
+into a=20
+single dataset using a join junction.<BR><B>MULTI</B> <B>CAST</B> - =
+Sends a copy=20
+of supplied Data Source onto multiple Destinations.<BR><B>ROW</B> =
+<B>COUNT</B> -=20
+Stores the resulting row count from the data flow / transformation into =
+a=20
+variable.<BR><B>ROW</B> <B>SAMPLING</B> - Captures sample data by using =
+a row=20
+count of the total rows in dataflow specified by rows or=20
+percentage.<BR><B>UNION</B> <B>ALL</B> - Merge multiple data sets into a =
+single=20
+dataset.<BR><B>PIVOT</B> =E2=80=93 Used for Normalization of data =
+sources to reduce=20
+analomolies by converting rows into columns<BR><B>UNPIVOT</B> =E2=80=93 =
+Used for=20
+demoralizing the data structure by converts columns into rows incase of =
+building=20
+Data Warehouses.</P>
+<P><B>Q: How to log SSIS Executions?</B><BR> SSIS includes logging =
+features that=20
+write log entries when run-time events occur and can also write custom =
+messages.=20
+This is not enabled by default. Integration Services supports a diverse =
+set of=20
+log providers, and gives you the ability to create custom log providers. =
+The=20
+Integration Services log providers can write log entries to text files, =
+SQL=20
+Server Profiler, SQL Server, Windows Event Log, or XML files. Logs are=20
+associated with packages and are configured at the package level. Each =
+task or=20
+container in a package can log information to any package log. The tasks =
+and=20
+containers in a package can be enabled for logging even if the package =
+itself is=20
+not.</P>
+<P><B>Q: How do you deploy SSIS packages</B>.<BR> BUILDing SSIS Projects =
+
+provides a <B>Deployment Manifest File.</B> We need to run the manifest =
+file and=20
+decide whether to deploy this onto File System or onto SQL Server [ =
+msdb]. SQL=20
+Server Deployment is very faster and more secure then File System =
+Deployment.=20
+Alternatively, we can also <B>import</B> the package from SSMS from File =
+System=20
+or SQ Server.</P>
+<P><B>Q: What are variables and what is variable scope ?</B> <BR> =
+Variables=20
+store values that a SSIS package and its containers, tasks, and event =
+handlers=20
+can use at run time. The scripts in the Script task and the Script =
+component can=20
+also use variables. The precedence constraints that sequence tasks and=20
+containers into a workflow can use variables when their constraint =
+definitions=20
+include expressions. Integration Services supports two types of =
+variables:=20
+user-defined variables and system variables. User-defined variables are =
+defined=20
+by package developers, and system variables are defined by Integration =
+Services.=20
+You can create as many user-defined variables as a package requires, but =
+you=20
+cannot create additional system variables.</P>
+<DIV>
+<P><BR><B>Q</B>: <B>Can you name five of the Perfmon counters for SSIS =
+and the=20
+value they provide?</B></P></DIV>
+<UL type=3D"disc">
+  <LI>SQLServer:SSIS Service</LI>
+  <LI>SSIS Package Instances</LI>
+  <LI>SQLServer:SSIS Pipeline</LI>
+  <LI>BLOB bytes read</LI>
+  <LI>BLOB bytes written</LI>
+  <LI>BLOB files in use</LI>
+  <LI>Buffer memory</LI>
+  <LI>Buffers in use</LI>
+  <LI>Buffers spooled</LI>
+  <LI>Flat buffer memory</LI>
+  <LI>Flat buffers in use</LI>
+  <LI>Private buffer memory</LI>
+  <LI>Private buffers in use</LI>
+  <LI>Rows read</LI>
+  <LI>Rows written</LI></UL>
+<HR>
+
+<H4>SSAS - SQL Server Analysis Services</H4>
+<P><B>Q: What is Analysis Services? List out the features?</B><BR> =
+Microsoft SQL=20
+Server 2005 Analysis Services (SSAS) delivers online analytical =
+processing=20
+(OLAP) and data mining functionality for business intelligence =
+applications.=20
+Analysis Services supports OLAP by letting we design, create, and manage =
+
+multidimensional structures that contain data aggregated from other data =
+
+sources, such as relational databases. For data mining applications, =
+Analysis=20
+Services lets we design, create, and visualize data mining models that =
+are=20
+constructed from other data sources by using a wide variety of=20
+industry-standard<BR> data mining algorithms.<BR><B>Analysis Services =
+</B>is a=20
+middle tier server for analytical processing, OLAP, and Data mining. It =
+manages=20
+multidimensional cubes of data and provides access to heaps of =
+information=20
+including aggregation of data. One can create data mining models from =
+data=20
+sources and use it for Business Intelligence also including reporting=20
+features.<BR> Analysis service provides a combined view of the data used =
+in OLAP=20
+or Data mining. Services here refer to OLAP, Data mining. Analysis =
+services=20
+assists in creating, designing and managing multidimensional structures=20
+containing data from varied sources. It provides a wide array of data =
+mining=20
+algorithms for specific trends and needs.</P>
+<P><B>Some of the key features are:</B></P>
+<UL type=3D"disc">
+  <LI>Ease of use with a lot of wizards and designers.</LI>
+  <LI>Flexible data model creation and management</LI>
+  <LI>Scalable architecture to handle OLAP</LI>
+  <LI>Provides integration of administration tools, data sources, =
+security,=20
+  caching, and reporting etc.</LI>
+  <LI>Provides extensive support for custom applications</LI></UL>
+<P><B>Q: What is UDM? Its significance in SSAS?</B><BR> The role of a =
+Unified=20
+Dimensional Model (UDM) is to provide a bridge between the user and the =
+data=20
+sources. A UDM is constructed over one or more physical data sources, =
+and then=20
+the end user issues queries against the UDM using one of a variety of =
+client=20
+tools, such as Microsoft Excel. At a minimum, when the UDM is =
+constructed merely=20
+as a thin layer over the data source, the advantages to the end user are =
+a=20
+simpler, more readily understood model of the data, isolation from =
+heterogeneous=20
+backend data sources, and improved performance for summary type queries. =
+In some=20
+scenarios a simple UDM like this is constructed totally automatically. =
+With=20
+greater investment in the construction of the UDM, additional benefits =
+accrue=20
+from the richness of metadata that the model can provide.</P>
+<P><B>The UDM provides the following benefits: </B><BR>=E2=80=A2 Allows =
+the user model=20
+to be greatly enriched. <BR>=E2=80=A2 Provides high performance queries =
+supporting=20
+interactive analysis, even over huge data volumes. <BR>=E2=80=A2 Allows =
+business rules=20
+to be captured in the model to support richer analysis.</P>
+<P><B>Q</B>: <B>What is the need for SSAS component?</B></P>
+<UL>
+  <LI>Analysis Services is the only component in SQL Server using which =
+we can=20
+  perform Analysis and Forecast operations.</LI>
+  <LI>SSAS is very easy to use and interactive.</LI>
+  <LI>Faster Analysis and Troubleshooting.</LI>
+  <LI>Ability to create and manage Data warehouses.</LI>
+  <LI>Apply efficient Security Principles.</LI></UL>
+<P><B>Q: Explain the TWO-Tier Architecture of SSAS?</B></P>
+<UL>
+  <LI>SSAS uses both server and client components to supply OLAP and =
+data mining=20
+  functionality BI Applications.</LI>
+  <LI>The server component is implemented as a Microsoft Windows =
+service. Each=20
+  instance of Analysis Services implemented as a separate instance of =
+the=20
+  Windows service.</LI>
+  <LI>Clients communicate with Analysis Services using the standard the =
+XMLA=20
+  (XML For Analysis) , protocol for issuing commands and receiving =
+responses,=20
+  exposed as a web service.</LI></UL>
+<P><B>Q: What are the components of SSAS?</B></P>
+<UL>
+  <LI>An OLAP Engine is used for enabling fast ad hoc&nbsp; queries by =
+end=20
+  users. A user can interactively explore data by drilling, slicing or=20
+  pivoting.</LI>
+  <LI>Drilling refers to the process of exploring details of the =
+data.</LI>
+  <LI>Slicing refers to the process of placing data in rows and =
+columns.</LI>
+  <LI>Pivoting refers to switching categories of data between rows and=20
+  columns.</LI>
+  <LI>In OLAP, we will be using what are called as Dimensional=20
+Databases.</LI></UL>
+<P><B>Q: What is FASMI ?</B><BR> A database is called a OLAP Database if =
+the=20
+database satisfies the <I><SPAN=20
+style=3D"text-decoration: underline;">FASMI</SPAN></I><SPAN =
+style=3D"text-decoration: underline;">=20
+</SPAN>&nbsp;rules :</P>
+<UL>
+  <LI><I>Fast Analysis</I><I>=E2=80=93 </I>is defined in the OLAP =
+scenario in five=20
+  seconds or less.</LI>
+  <LI><I>Shared =E2=80=93 </I>Must support access&nbsp; to data by many =
+users in&nbsp;=20
+  the factors of Sensitivity and Write Backs.</LI>
+  <LI><I>Multidimensional =E2=80=93 </I>The data inside the OLAP =
+Database must be=20
+  multidimensional in structure<I>.</I></LI>
+  <LI><I>Information =E2=80=93 </I>The OLAP database Must support large =
+volumes of=20
+  data..</LI></UL>
+<P><B>Q: What languages are used in SSAS ?</B></P>
+<UL>
+  <LI>Structured Query Language (SQL)</LI>
+  <LI>Multidimensional Expressions (MDX) - an industry standard query =
+language=20
+  orientated towards analysis</LI>
+  <LI>Data Mining Extensions (DMX) - an industry standard query language =
+
+  oriented toward data mining.</LI>
+  <LI>Analysis Services Scripting Language (ASSL) - used to manage =
+Analysis=20
+  Services database objects.</LI></UL>
+<P><B>Q: How Cubes are implemented in SSAS ?</B></P>
+<UL>
+  <LI>Cubes are multidimensional models that store data from one or more =
+
+  sources.</LI>
+  <LI>Cubes can also store aggregations</LI>
+  <LI>SSAS Cubes are created using the Cube Wizard.</LI>
+  <LI>We also build Dimensions when creating Cubes.</LI>
+  <LI>Cubes can see only the DSV( logical View).</LI></UL>
+<P><B>Q: What is the difference between a derived measure and a =
+calculated=20
+measure? </B><BR> The difference between a derived measure and a =
+calculated=20
+measure is when the calculation is performed. A derived measure is =
+calculated=20
+before aggregations are created, and the values of the derived measure =
+are=20
+stored in the cube. A calculated measure is calculated after =
+aggregations are=20
+created, and the values of a calculated measure aren=E2=80=99t stored in =
+the cube. The=20
+primary criterion for choosing between a derived measure and a =
+calculated=20
+measure is not efficiency, but accuracy.</P>
+<P><B>Q: What is a partition? </B><BR> A partition in Analysis Services =
+is the=20
+physical location of stored cube data. Every cube has at least one =
+partition by=20
+default. Each time we create a measure group, another partition is =
+created.=20
+Queries run faster against a partitioned cube because Analysis Services =
+only=20
+needs to read data from the partitions that contain the answers to the =
+queries.=20
+Queries run even faster when partition also stores aggregations, the pre =
+
+calculated totals for additive measures. Partitions are a powerful and =
+flexible=20
+means of managing cubes, especially large cubes.</P>
+<P><B>Q: While creating a new calculated member in a cube what is the =
+use of=20
+property </B><BR><B>called non-empty behavior? </B><BR> Nonempty =
+behavior is=20
+important property for <B>ratio</B> calculations. If the denominator Is =
+empty,=20
+an MDX expression will return an error just as it would if the =
+denominator Were=20
+equal to zero. By selecting one or more measures for the Non-Empty =
+Behavior=20
+property, we are establishing a requirement that each selected measure =
+first be=20
+evaluated before the calculation expression is evaluated. If each =
+selected=20
+measure is empty, then The expression is also treated as empty and no =
+error is=20
+returned.</P>
+<P><B>Q: What is a RAGGED hierarchy? </B><BR> Under normal =
+circumstances, each=20
+level in a hierarchy in Microsoft SQL Server 2005 Analysis Services =
+(SSAS) has=20
+the same number of members above it as any other member at the same =
+level. In a=20
+ragged hierarchy, the logical parent member of at least one member is =
+not in the=20
+level immediately above the member. When this occurs, the hierarchy =
+descends to=20
+different levels for different drilldown paths. Expanding through every =
+level=20
+for every drilldown path is then unnecessarily complicated.</P>
+<P><BR><B>Q: What are the roles of an Analysis Services Information =
+Worker?=20
+</B></P>
+<P>The role of an Analysis Services information worker is the =
+traditional=20
+"domain expert" role in business intelligence (BI) someone who =
+understands the=20
+data employed by a solution and is able to translate the data into =
+business=20
+information. The role of an Analysis Services information worker often =
+has one=20
+of the following job titles: Business Analyst (Report Consumer), Manager =
+(Report=20
+Consumer), Technical Trainer, Help Desk/Operation, or Network =
+Administrator.</P>
+<DIV>
+<P><B>Q: What are the different ways of creating =
+Aggregations?&nbsp;&nbsp;&nbsp;=20
+</B><BR> We can create aggregations for faster MDX statements using =
+Aggregation=20
+Wizard or thru UBO =E2=80=93 Usage Based Optimizations. Always, prefer =
+UBO method in=20
+realtime performance troubleshooting.<B></B></P>
+<P><B>Q: What is WriteBack? What are the pre-conditions?</B><BR> The=20
+<B>Enable/Disable Writeback</B> dialog box enables or disables writeback =
+for a=20
+measure group in a cube. Enabling writeback on a measure group defines a =
+
+writeback partition and creates a writeback table for that measure =
+group.=20
+Disabling writeback on a measure group removes the writeback partition =
+but does=20
+not delete the writeback table, to avoid unanticipated data loss. =
+<B></B></P>
+<P><B>Q: What is processing?</B><BR> Processing is a critical and =
+resource=20
+intensive operation in the data warehouse lifecycle and needs to be =
+carefully=20
+optimized and executed. Analysis Services 2005 offers a high performance =
+and=20
+scalable processing architecture with a comprehensive set of controls =
+for=20
+database administrators. <B></B><BR> We can process an OLAP database, =
+individual=20
+cube, Dimension or a specific Partition in a cube.</P></DIV>
+<P>&nbsp;</P>
+<P><B>Q: Name few Business Analysis Enhancements for SSAS?</B><BR> The =
+following=20
+table lists the business intelligence enhancements that are available in =
+
+Microsoft SQL Server 2005 Analysis Services (SSAS). The table also shows =
+the=20
+cube or dimension to which each business intelligence enhancement =
+applies, and=20
+indicates whether an enhancement can be applied to an object that was =
+created=20
+without using a data source and for which no schema has been =
+generated.</P>
+<TABLE width=3D"100%" border=3D"1" cellspacing=3D"0" cellpadding=3D"0">
+  <TBODY>
+  <TR>
+    <TD height=3D"2" align=3D"center" =
+valign=3D"middle"><I><B>Enhancement=20
+</B></I></TD>
+    <TD><I><B>Type</B></I></TD>
+    <TD align=3D"center" valign=3D"middle"><I><B>Applied to</B></I></TD>
+    <TD><B>No data source </B></TD></TR>
+  <TR>
+    <TD>Time Intelligence</TD>
+    <TD>Cube</TD>
+    <TD>Cube</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Account Intelligence</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension or cube</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Dimension Intelligence</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension or cube</TD>
+    <TD>Yes</TD></TR>
+  <TR>
+    <TD>Custom Aggregation</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension (unary operator) or cube</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Semiadditive Behavior</TD>
+    <TD>Cube</TD>
+    <TD>Cube</TD>
+    <TD>Yes&gt;</TD></TR>
+  <TR>
+    <TD>Custom Member Formula</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension or cube</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Custom Sorting and Uniqueness Settings</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension or cube</TD>
+    <TD>Yes</TD></TR>
+  <TR>
+    <TD>Dimension Writeback</TD>
+    <TD>Dimension</TD>
+    <TD>Dimension or cube</TD>
+    <TD>Yes</TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<DIV></DIV>
+<P><B>Q: What MDX functions do you most commonly use?</B> <BR> This is a =
+great=20
+question because you only know this answer by experience.&nbsp; If you =
+ask me=20
+this question, the answer practically rushes out of me.&nbsp; =
+=E2=80=9CCrossJoin,=20
+Descendants, and NonEmpty, in addition to Sum, Count, and =
+Aggregate.&nbsp; My=20
+personal favorite is CrossJoin because it allows me identify =
+non-contiguous=20
+slices of the cube and aggregate even though those cube cells =
+don=E2=80=99t roll up to a=20
+natural ancestor.=E2=80=9D&nbsp; Indeed, CrossJoin has easily been my =
+bread and=20
+butter.</P>
+<P><B>Q: Where do you put calculated members?</B> <BR> The reflexive =
+answer is=20
+=E2=80=9Cin the Measures dimension=E2=80=9D but this is the obvious =
+answer.&nbsp; So I always=20
+follow up with another question.&nbsp; =E2=80=9CIf you want to create a =
+calculated=20
+member that intersects all measures, where do you put it?=E2=80=9D&nbsp; =
+A high=20
+percentage of candidates can=E2=80=99t answer this question, and the =
+answer is =E2=80=9CIn a=20
+dimension other than Measures.=E2=80=9D&nbsp; If they can answer it, I =
+immediately ask=20
+them why.&nbsp; The answer is =E2=80=9CBecause a member in a dimension =
+cannot intersect=20
+its own relatives in that dimension.=E2=80=9D</P>
+<P><BR><B>Q: How do I find the bottom 10 customers with the lowest sales =
+in 2003=20
+that were not null?</B><BR><BR> A: Simply using bottomcount will return=20
+customers with null sales. You will have to combine it with NONEMPTY or=20
+FILTER.<BR><BR> SELECT { [Measures].[Internet Sales Amount] } ON COLUMNS =
+,<BR>=20
+BOTTOMCOUNT(<BR> NONEMPTY(DESCENDANTS( [Customer].[Customer =
+Geography].[All=20
+Customers]<BR> , [Customer].[Customer Geography].[Customer] )<BR> , (=20
+[Measures].[Internet Sales Amount] ) )<BR> , 10<BR> , ( =
+[Measures].[Internet=20
+Sales Amount] )<BR> ) ON ROWS<BR> FROM [Adventure Works]<BR> WHERE (=20
+[Date].[Calendar].[Calendar Year].&amp;[2003] ) ;</P>
+<P><B>Q: How in MDX query can I get top 3 sales years based on order=20
+quantity?</B><BR><BR> By default Analysis Services returns members in an =
+order=20
+specified during attribute design. Attribute properties that define =
+ordering are=20
+"OrderBy" and "OrderByAttribute". Lets say we want to see order counts =
+for each=20
+year. In Adventure Works MDX query would be:<BR><BR> SELECT=20
+{[Measures].[Reseller Order Quantity]} ON 0<BR> , =
+[Date].[Calendar].[Calendar=20
+Year].Members ON 1<BR> FROM [Adventure Works];<BR><BR> Same query using=20
+TopCount:<BR> SELECT<BR> {[Measures].[Reseller Order Quantity]} ON =
+0,<BR>=20
+TopCount([Date].[Calendar].[Calendar Year].Members,3, =
+[Measures].[Reseller Order=20
+Quantity]) ON 1<BR> FROM [Adventure Works];</P>
+<P><B>Q: How do you extract first tuple from the set?</B><BR><BR> Use =
+could=20
+usefunction Set.Item(0)<BR> Example:<BR><BR> SELECT=20
+{{[Date].[Calendar].[Calendar Year].Members<BR> }.Item(0)}<BR> ON 0<BR> =
+FROM=20
+[Adventure Works]</P>
+<P><B>Q: How can I setup default dimension member in Calculation=20
+script?</B><BR><BR> You can use ALTER CUBE statement. Syntax:<BR> ALTER =
+CUBE=20
+CurrentCube | YourCubeName UPDATE DIMENSION , DEFAULT_MEMBER=3D'';</P>
+<HR>
+
+<H4>SSRS - SQL Server Reporting Services</H4>
+<P><B>Q: What is SSRS?</B> <BR>SQL Server Reporting Service is one of =
+the=20
+server-based software systems that generate reports developed by =
+Microsoft. It=20
+is used for preparing and delivering interactive and variety of printed =
+reports.=20
+It is administered through an interface that is web based. Reporting =
+services=20
+utilizes a web service interface for supporting and developing of =
+customized=20
+reporting applicatons. It can be competed with Crystal Reports and other =
+
+business intelligent tools.</P>
+<P><B>Q: Explain SSRS Architecture?</B> <BR>Reporting services =
+architecture is=20
+comprises of integrated components. It is multi-tiered, included with=20
+application, server and data layers. This architecture is scalable and =
+modular.=20
+A single installation can be used across multiple computers. It includes =
+the=20
+following components: - Report Manager, Reporting Designer, Browser =
+Types=20
+Supported by Reporting services, Report server, Report server command =
+line=20
+utilities, Report Server Database, Reporting Services Extensibility, =
+Data=20
+sources that is supported by Reporting Services.</P>
+<P><B>Q: Explain Reporting Life Cycye?</B> <BR>The Reporting Lifecycle =
+includes=20
+- Report designing =E2=80=93 The designing is done in Visual Studio =
+Report Designer. It=20
+generates a class which embodies the Report Definition. - Report =
+processing =E2=80=93=20
+The processing includes binging the report definition with data from the =
+report=20
+data source. It performs on all grouping, sorting and filtering =
+calculations.=20
+The expressions are evaluated except the page header, footer and section =
+items.=20
+Later it fires the Binding event and Bound event. As a result of the =
+processing,=20
+it produces Report Instance. Report instance may be persisted and stored =
+which=20
+can be rendered at a later point of time. - Report Rendering: Report =
+rendering=20
+starts by passing the Report Instance to a specific rendering extension =
+(HTML or=20
+PDF formats). The instance of reports is paged if paging supported by =
+output=20
+format. The expressions of items are evaluated in the page header and =
+footer=20
+sections for every page. As a final step, the report is rendered to the =
+specific=20
+output document.</P>
+<P><B>Q: How to finetune Reports?</B> <BR>To tune-up the Reporting =
+Services,=20
+follow the below mentioned ways: - Expand the Server or utilizing the =
+reporting=20
+services of another database server. For better embedding of report =
+contents,=20
+report application=E2=80=99s logic and characteristics can have a =
+duplicate copy of=20
+data. - Replication of data continuously. Using nolock, the issues of =
+locking=20
+can well be resolved and the performance of the query can be improved. =
+This can=20
+be done by using dirty read at the time of duplicating the data is=20
+unavailable.</P>
+<P><B>Q: What are Data Driven Subscriptions?</B> <BR>Reporting Services =
+provides=20
+data-driven subscriptions so that you can customize the distribution of =
+a report=20
+based on dynamic subscriber data. Data-driven subscriptions are intended =
+for the=20
+following kinds of scenarios: Distributing reports to a large recipient =
+pool=20
+whose membership may change from one distribution to the next. For =
+example=20
+distribute a monthly report to all current customers. Distributing =
+reports to a=20
+specific group of recipients based on predefined criteria. For example =
+send a=20
+sales performance report to the top ten sales managers in an =
+organization.</P>
+<P><B>Q: What is Linked Report?</B></P>
+<P><B>Q: What are different types of roles provided by SSRS?</B></P>
+<P><B>Q: Difference between Logical Page an Physical Page in SSRS.</B>=20
+<BR>Logical page breaks are page breaks that you insert before or after =
+report=20
+items or groups. Page breaks help to determine how the content is fitted =
+to a=20
+report page for optimal viewing when rendering or exporting the report. =
+The=20
+following rules apply when rendering logical page breaks: Logical page =
+breaks=20
+are ignored for report items that are constantly hidden and for report =
+items=20
+where the visibility is controlled by clicking another report item. =
+Logical page=20
+breaks are applied on conditionally visible items if they are currently =
+visible=20
+at the time the report is rendered. Space is preserved between the =
+report item=20
+with the logical page break and its peer report items. Logical page =
+breaks that=20
+are inserted before a report item push the report item down to the next =
+page.=20
+The report item is rendered at the top of the next page. Logical page =
+breaks=20
+defined on items in table or matrix cells are not kept. This does not =
+apply to=20
+items in lists.</P>
+<P><B>Q: User want only to display only pdf as export option in report =
+Manager.=20
+How to acheive this?<BR></B></P>
+<P><B>Q: Name and Describe few console utilities for SSRS?</B></P>
+<P><B>Q: Name few Endpoints exposed by SSRS 2012?</B></P>
+<P><B>Q: Describe different Processing Modes offered by SSRS?</B></P>
+<P><B>Q: When to Use Null Data driven Subscription?</B> <BR>Create a =
+data-driven=20
+subscription that uses the Null Delivery Provider. When you specify the =
+Null=20
+Delivery Provider as the method of delivery in the subscription, the =
+report=20
+server targets the report server database as the delivery destination =
+and uses a=20
+specialized rendering extension called the null rendering extension. In =
+contrast=20
+with other delivery extensions, the Null Delivery Provider does not have =
+
+delivery settings that you can configure through a subscription =
+definition.</P>
+<P><B>Q: How can you monitor the report Usage?</B></P>
+<P><B>Q: How does the report manager work in SSRS? </B> <BR>Report =
+manager is a=20
+web application. In SSRS it is accessed by a URL. The interface of this =
+Report=20
+manager depends on the permissions of the user. This means to access any =
+
+functionality or perform any task, the user must be assigned a role. A =
+user with=20
+a role of full permissions can entire all the features and menus of the =
+report.=20
+To configure the report manager, a URL needs to be defined.</P>
+<P><B>Q: What are the Reporting Services components?</B> <BR>Reporting =
+services=20
+components assist in development. These processing components include =
+some tools=20
+that are used to create, manage and view reports. A report designer is =
+used to=20
+create the reports. a report sever is used to execute and distribute =
+reports. a=20
+report manager is used to manage the report server.</P>
+<P><B>Q:SQL Server Reporting Services vs Crystal Reports. </B> =
+<BR>Crystal=20
+reports are processed by IIS while SSRS have a report server. Caching in =
+Crystal=20
+reports is available through cache server. On the other hand, caching in =
+SSRS is=20
+available for Report history snapshots. Crystal reports have standards =
+and user=20
+defined field labels. SSRS allows only user defined field labels.</P>
+<P><B>Q: What is Report Builder?</B> <BR>Report Builder is a =
+business-user,=20
+ad-hoc report design client that allows users to design reports based on =
+the=20
+business terms (Report Builder model) they are familiar with, but =
+without=20
+needing to understand database schemas or how to write SQL or MDX =
+queries.=20
+Report Builder works with both SQL Server and Analysis Services data=20
+sources.</P>
+<P><B>Q: How does Report Builder support Analysis Services cubes?</B> =
+<BR>Report=20
+Builder supports relational SQL and Analysis Services data sources in =
+SQL Server=20
+2005. To create a model for Analysis Services cube, go to Report Manager =
+or=20
+Management Studio, create a data source for your Analysis Services =
+database, and=20
+then select the Generate Model option to create the model.</P>
+<P><B>Q: How do users use Report Builder with SQL Server data =
+sources?</B>=20
+<BR>While models that provide access to SQL Server Analysis Services are =
+
+automatically generated on the report server, the Report Builder Model =
+Designer=20
+can be used to generate or modify the models that are built on top of =
+SQL Server=20
+relational databases. These model-building projects are a new type of =
+project=20
+within a Visual Studio=E2=80=93based development shell.</P>
+<P><B>Q: How do I get Report Builder to generate a parameter that can be =
+set by=20
+users viewing the report?</B> <BR>In the filter dialog box, click the =
+name of=20
+the criteria that you would like to prompt the user for when viewing the =
+report.=20
+For example, for the criteria Order Year=3D2000, click Order Year. =
+Select the=20
+Prompt option in the drop-down list.</P>
+<P><B>Q: What new data source types were added in SSRS 2012?</B> <BR>In =
+addition=20
+to the data source types available in SSRS 2005 (SQL Server, Oracle, =
+ODBC, OLE=20
+DB), the following have been added in SSRS 2008: SQL Server 2005 =
+Analysis=20
+Services SQL Server 2005 Integration Services SQL Server 2005 Report =
+Builder=20
+Models XML (through URL and Web services) SAP</P>
+<P><B>Q: How can I add Reporting Services reports to my application?</B> =
+
+<BR>Visual Studio 2005 (Standard and Enterprise editions) contains a set =
+of=20
+freely redistributable Report Viewer controls that make it easy to embed =
+
+Reporting Services functionality into custom applications. Two versions =
+of the=20
+Report Viewer exist, one for rich Windows client applications and one =
+for=20
+ASP.NET applications.</P>
+<P><B>Q: Do I need a report server to run reports in my application?</B> =
+<BR>In=20
+addition to publishing reports to a report server, you can build reports =
+using=20
+the Report Designer that is directly integrated with Visual Studio =
+language=20
+projects. You can embed reports directly in any Windows Forms or ASP.NET =
+Web=20
+application without access to a report server. The data access in =
+embedded=20
+reports is a natural extension of the Visual Studio data facilities. Not =
+only=20
+can you use traditional databases as a source of data for your reports, =
+you can=20
+use object collections as well.</P>
+<P><B>Q: Can you import Microsoft Excel data to SSRS?</B> <BR>Reporting =
+Services=20
+does not import data. It only queries data in whatever format it is =
+stored in=20
+their native storage system. I will assume that you're asking whether =
+you can=20
+create reports and use Excel spreadsheets as data sources. The answer is =
+Yes,=20
+Reporting Services supports a wide variety of data sources, including =
+Excel=20
+files. You'll get the best performance with the built-in native .NET =
+providers=20
+but you should be able to connect to any ODBC or OLE-DB data source, =
+whether it=20
+comes from Microsoft or a third-party company.</P>
+<P><B>Q: Can we deploy SSRS reports on our personal website?</B> =
+<BR>Your=20
+reports can only be deployed on a reporting services site. Your only =
+option for=20
+viewing them from other sites is an HTTP link. Some tools, like =
+SharePoint offer=20
+controls allowing you to view reports in the context of the other =
+websites, but=20
+the report is still deployed to and hosted from reporting services.</P>
+<P><B>Q: Can we use datagrids for our report in SSRS?</B> <BR>I've got =
+an=20
+ASP.NET project that populates a datagrid. I'd like to use the datagrid =
+as my=20
+datasource for my report using SQL Server Reporting Services. Is this =
+possible?=20
+The simple answer is no. However, nothing's ever simple. A set of =
+reporting=20
+controls was added in Visual Studio 2010 allowing you to report in a =
+dataset, on=20
+data that was supplied by you. So, if you retrieved your data into a =
+dataset,=20
+bound the datagrid to the dataset so it had data to display, you could =
+then use=20
+that dataset as the datasource for the reporting controls. These are =
+then=20
+client-side reports, not server reports though.</P>
+<P><B>Q: What are the drawbacks of reporting in SSRS?</B> <BR>For many =
+years,=20
+Microsoft had no direct solution for reporting with the SQL Server =
+besides=20
+Crystal Reports. Now, they have SQL Server Reporting Services, but it =
+does have=20
+several drawbacks. It is still complex to understand the complete =
+functionality=20
+and structure of this new component, and many users are still relying on =
+the=20
+reporting application they are more familiar with, which is Crystal =
+Reports.=20
+Also, components in SSRS like Report Builder and Report Designer are =
+meant for=20
+different users for different aspects of the report process, yet =
+complete=20
+understanding and exposure to both is important to utilize both =
+functions fully=20
+and extensively. There are also issues when exporting very large reports =
+to=20
+Microsoft Excel, as it can lead to a loss of data.</P>
+<P><B>Q: Will running SSRS on Windows XP limit the number of users?</B> =
+<BR>Yes,=20
+but not because of SSRS. The Internet Information Services (IIS) =
+component of=20
+Windows XP only allows a small number of users to connect to the website =
+at=20
+once. As SSRS runs via IIS, this would prevent more than a few people =
+from using=20
+SSRS at once. Also, the only edition of SSRS that will install on =
+Windows XP is=20
+the Developer Edition. This edition can not be used for production use. =
+You need=20
+Standard or Enterprise Edition for production use, which requires a =
+Server OS to=20
+install on (Windows 2003 Standard, Windows 2008 Standard, etc).</P>
+<P><B>Q: Are there issues when exporting SSRS reports into Microsoft =
+Excel?</B>=20
+<BR>When my users are trying to export a SSRS report into Microsoft =
+Excel, one=20
+or two columns in the report appear to merge together. Why might this =
+be?=20
+Exporting from SSRS is not always perfect, even if you stay within the =
+Microsoft=20
+range of products. If you have extra resources, you could splurge for an =
+add-on=20
+that offers much better control over exporting to Excel, such as =
+OfficeWriter.=20
+From my experience, though, it is usually headers or footers that cause=20
+exporting issues. If any of these headers or footers overlap with data =
+columns=20
+in your report, you will find that the exported version of the report =
+has merged=20
+cells. Also, check columns next to each other to make sure that there is =
+no=20
+overlap, as well.</P>
+<P><B>Q: How to send a SSRS report from SSIS?</B> <BR>Often there is a=20
+requirement to be able to send a SSRS report in Excel, PDF or another =
+format to=20
+different users from a SSIS package one it has finished performing a =
+data load.=20
+In order to do this, first you need to create a subscription to the =
+report. You=20
+can create a SSRS report subscription from Report Manager. At the report =
+
+subscription you can mention the report format and the email address of =
+the=20
+recipient. When you create a schedule for the SSRS report, a SQL Server =
+Agent=20
+Job will be created. From the SSIS, by using sp_start_job and passing =
+the=20
+relevant job name you can execute the SSRS report subscription.</P>
+<DIV class=3D"contactAdPanel00">
+<H4><A class=3D"TrainingContactstat" style=3D"color: white; =
+text-decoration: none;"=20
+href=3D"http://sqldbatraining.com/contact.html" =
+target=3D"_blank">Register For Free=20
+DEMO</A><A></A></H4></DIV>
+<DIV style=3D"background-color: rgb(240, 240, 240);">&nbsp;&nbsp;<SPAN =
+style=3D"color: rgb(75, 0, 130); font-family: arial; font-weight: bold; =
+background-color: rgb(255, 215, 0);"><STRONG>&nbsp;&nbsp;For=20
+MSBI Sample Resume, please </STRONG></SPAN>&nbsp;<A =
+class=3D"TrainingContact"=20
+href=3D"http://sqlbitraining.com/MSBI_Interview_Questions.html"=20
+target=3D"_blank">Click Here </A></DIV></DIV>
+<DIV></DIV>
+<DIV class=3D"contentBtm_full" style=3D"text-align: justify;">
+<DIV class=3D"inner"></DIV></DIV>
+<DIV class=3D"footer">
+<DIV class=3D"inner">
+<DIV class=3D"links"><A =
+href=3D"http://sqlschool.com/index.html">Home</A> | <A =
+href=3D"http://sqlschool.com/SQLDBA_Training.html"=20
+target=3D"_blank">T-SQL &amp; SQL DBA Training</A> | <A =
+href=3D"http://sqlschool.com/MSBI_Training.html"=20
+target=3D"_blank">MSBI Training</A> | <A=20
+href=3D"http://sqlschool.com/contact.html">Contact Us</A> | <A =
+href=3D"http://sqlschool.com/Training_Terms_PP.html"=20
+target=3D"_blank">Service Terms</A> | <A =
+href=3D"http://sqlschool.com/SQLSchool_Legal_Polocy.html"=20
+target=3D"_blank">Privacy Policy</A>=20
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright=20
+2013, SequelGate Innovative Technologies Pvt. Ltd</DIV>
+<DIV class=3D"clearfloat"></DIV></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01CEF517.0E488650
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://sqlschool.com/styles/global.css
+
+body {
+	color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; =
+font-size: 12px;
+}
+td {
+	color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; =
+font-size: 12px;
+}
+th {
+	color: rgb(0, 0, 0); font-family: Verdana, Geneva, sans-serif; =
+font-size: 12px;
+}
+body {
+	margin: 0px; background-image: url("../images/bg.gif"); =
+background-repeat: repeat-x; background-color: rgb(217, 229, 239);
+}
+a {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+a:hover {
+	color: rgb(0, 0, 255); text-decoration: underline;
+}
+h1 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h6 {
+	margin: 0px; color: rgb(0, 153, 204); padding-bottom: 15px; =
+font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+p {
+	margin: 0px; padding-bottom: 15px;
+}
+img {
+	border: currentColor;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+input {
+	font-family: Verdana, Geneva, sans-serif; font-size: 12px;
+}
+textarea {
+	font-family: Verdana, Geneva, sans-serif; font-size: 12px;
+}
+select {
+	font-family: Verdana, Geneva, sans-serif; font-size: 12px;
+}
+.clearfloat {
+	height: 0px; line-height: 0px; clear: both; font-size: 1px;
+}
+.header {
+	background-position: 580px 15px; margin: 0px auto; width: 940px; =
+height: 110px; padding-top: 15px; background-image: =
+url("../images/header_img.jpg"); background-repeat: no-repeat;
+}
+.headerTitle {
+	width: 400px; height: 70px; text-indent: -9999px; display: block; =
+background-image: url("../images/sql-server-training.gif"); =
+background-repeat: no-repeat;
+}
+.navigation {
+	border-left-color: rgb(61, 61, 61); border-left-width: 1px; =
+border-left-style: solid; background-color: rgb(27, 31, 34);
+}
+.navigation ul {
+	margin: 0px; padding: 0px; width: auto; font-size: 100%; =
+list-style-type: none; cursor: default;
+}
+.navigation ul li {
+	margin: 0px; padding: 0px; width: auto; text-align: center; float: =
+left; list-style-type: none; position: relative; cursor: pointer;
+}
+.navigation a {
+	width: 132px; height: 40px; color: rgb(255, 255, 255); line-height: =
+40px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; =
+font-weight: normal; text-decoration: none; border-right-color: rgb(61, =
+61, 61); border-right-width: 1px; border-right-style: solid; display: =
+block; background-color: rgb(27, 31, 34);
+}
+.navigation a:hover {
+	color: rgb(255, 255, 255); background-image: =
+url("../images/navigation_bg.gif"); background-repeat: repeat-x; =
+background-color: rgb(224, 22, 68);
+}
+.navigation .active {
+	color: rgb(255, 255, 255); cursor: default; background-image: =
+url("../images/navigation_bg.gif"); background-repeat: repeat-x; =
+background-color: rgb(224, 22, 68);
+}
+.homeTopFeatures {
+	margin: 0px auto; padding: 10px 0px; width: 940px;
+}
+.homeTopFeatures .demo {
+	width: 310px; height: 90px; font-family: Arial, Helvetica, sans-serif; =
+font-size: 17px; margin-right: 10px; float: left; background-image: =
+url("../images/feature_demo_bg.jpg"); background-repeat: no-repeat;
+}
+.homeTopFeatures .demo a {
+	width: 250px; height: 70px; color: rgb(51, 51, 0); padding-top: 10px; =
+padding-left: 40px; text-decoration: none; display: block;
+}
+.homeTopFeatures .demo a:hover {
+	color: rgb(153, 51, 0);
+}
+.homeTopFeatures .name {
+	color: rgb(153, 51, 0); font-size: 24px; font-weight: bold;
+}
+.homeTopFeatures .news {
+	padding: 10px 10px 10px 50px; width: 240px; height: 70px; color: =
+rgb(51, 51, 0); font-family: Arial, Helvetica, sans-serif; font-size: =
+20px; font-weight: bold; float: left; background-image: =
+url("../images/feature_news_bg.jpg"); background-repeat: no-repeat;
+}
+#pscroller1 {
+	height: 70px;
+}
+#pscroller1 a {
+	color: rgb(51, 51, 0); font-size: 14px; font-weight: normal; =
+text-decoration: none;
+}
+#pscroller1 a:hover {
+	color: rgb(153, 51, 51);
+}
+.homeTopFeatures .phones {
+	width: 290px; height: 80px; text-align: right; color: rgb(0, 51, 102); =
+line-height: 24px; padding-top: 10px; padding-right: 20px; font-family: =
+Arial, Helvetica, sans-serif; font-size: 18px; float: right; =
+background-image: url("../images/feature_phones_bg.jpg"); =
+background-repeat: no-repeat;
+}
+.homeContent {
+	margin: 0px auto; width: 900px; padding-top: 20px; padding-right: 20px; =
+padding-left: 20px; background-image: =
+url("../images/content_home_top.gif"); background-repeat: no-repeat; =
+background-color: rgb(255, 255, 255);
+}
+.homeContent p {
+	text-align: justify; line-height: 16px;
+}
+.homeBtmFeatures {
+	background-position: top; padding-top: 10px; background-image: =
+url("../images/content_home_btm.gif"); background-repeat: no-repeat; =
+background-color: rgb(29, 29, 29);
+}
+.homeBtmFeatures .inner {
+	margin: 0px auto; padding: 20px; width: 900px; color: rgb(255, 255, =
+255);
+}
+.homeBtmFeatures .featureBox {
+	padding: 0px 20px; width: 250px; margin-right: 10px; float: left; =
+display: inline; min-height: 150px; background-image: =
+url("../images/feature_btm_div.gif"); background-repeat: no-repeat;
+}
+.homeBtmFeatures h2 {
+	color: rgb(255, 51, 51); font-family: Arial, Helvetica, sans-serif; =
+font-size: 24px; font-weight: normal;
+}
+.homeBtmFeatures ul {
+	list-style: square; margin: 0px; padding: 0px 0px 0px 10px;
+}
+.homeBtmFeatures li {
+	margin: 0px 0px 5px 5px;
+}
+.homeBtmFeatures2 {
+	background-position: top; padding-top: 10px; background-image: =
+url("../images/content_home_btm.gif"); background-repeat: no-repeat; =
+background-color: rgb(206, 227, 246);
+}
+.homeBtmFeatures2 .inner {
+	margin: 0px auto; padding: 20px; width: 900px; color: rgb(250, 88, 88);
+}
+.homeBtmFeatures2 .featureBox {
+	padding: 0px 10px; width: 250px; margin-right: 10px; float: left; =
+display: inline; min-height: 120px; background-image: =
+url("../images/feature_btm_div.gif"); background-repeat: no-repeat;
+}
+.contentTop {
+	margin: 10px auto 0px; width: 940px; height: 10px; line-height: 0px; =
+font-size: 1px; background-image: url("../images/content_top.gif"); =
+background-repeat: no-repeat;
+}
+.contentBtm {
+	background-color: rgb(29, 29, 29);
+}
+.contentBtm .inner {
+	background-position: top; margin: 0px auto; width: 940px; height: 40px; =
+line-height: 0px; font-size: 1px; background-image: =
+url("../images/content_btm.gif"); background-repeat: no-repeat;
+}
+.contentTop_full {
+	margin: 10px auto 0px; width: 940px; height: 10px; line-height: 0px; =
+font-size: 1px; background-image: url("../images/content_top_full.gif"); =
+background-repeat: no-repeat;
+}
+.contentBtm_full {
+	background-color: rgb(29, 29, 29);
+}
+.contentBtm_full .inner {
+	background-position: top; margin: 0px auto; width: 940px; height: 40px; =
+line-height: 0px; font-size: 1px; background-image: =
+url("../images/content_btm_full.gif"); background-repeat: no-repeat;
+}
+.sectionContent {
+	background-position: right top; margin: 0px auto; width: 940px; =
+padding-top: 10px; min-height: 250px; background-image: =
+url("../images/content_bg.gif"); background-repeat: repeat-y; =
+background-color: rgb(255, 255, 255);
+}
+.sectionContent ul {
+	list-style: square; margin: 0px 0px 15px 15px; padding: 0px 0px 0px =
+10px;
+}
+.sectionContent li {
+	margin: 0px 0px 5px 5px;
+}
+.sectionContent_full {
+	margin: 0px auto; padding: 10px 20px 0px; width: 900px; min-height: =
+350px; background-color: rgb(255, 255, 255);
+}
+.sectionContent_full ul {
+	list-style: square; margin: 0px 0px 15px 15px; padding: 0px 0px 0px =
+10px;
+}
+.sectionContent_full li {
+	margin: 0px 0px 5px 5px;
+}
+.mainPanel {
+	width: 680px; padding-left: 20px; float: left;
+}
+.mainPanel p {
+	text-align: justify; line-height: 16px;
+}
+.rightPanel {
+	width: 200px; text-align: left; color: rgb(255, 255, 255); =
+padding-right: 10px; float: right;
+}
+.footer {
+	border-top-color: rgb(40, 40, 40); border-top-width: 5px; =
+border-top-style: solid; background-color: rgb(0, 0, 0);
+}
+.footer .inner {
+	margin: 0px auto; width: 940px; height: 40px; color: rgb(255, 255, =
+255); line-height: 40px; font-family: Tahoma, Geneva, sans-serif; =
+font-size: 11px;
+}
+.footer .links {
+	padding-left: 20px; float: left;
+}
+.footer .text {
+	padding-right: 20px; float: right;
+}
+.footer a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.footer a:hover {
+	color: rgb(255, 51, 51); text-decoration: none;
+}
+a.TrainingContactstat {
+	background: rgb(255, 0, 51); padding: 10px; border-radius: 10px; =
+text-align: center; color: rgb(255, 255, 255); font-size: 13px; =
+font-weight: bold; text-decoration: none; display: block; box-shadow: =
+inset -10px -10px 30px #c00; -webkit-box-shadow: -10px -10px 30px #C00; =
+-moz-box-shadow: -10px -10px 30px #C00; -webkit-border-radius: 10px; =
+-moz-border-radius: 10px;
+}
+a.TrainingContactstat:hover {
+	background: rgb(204, 0, 0); box-shadow: inset -10px -10px 30px #900; =
+-webkit-box-shadow: -10px -10px 30px #900; -moz-box-shadow: -10px -10px =
+30px #900;
+}
+.contactAdPanel00 {
+	width: 190px; right: 10px; bottom: 0px; position: fixed;
+}
+.contactAdPanel1 {
+	background: rgb(95, 238, 136); margin: 10px 0px; padding: 0px 0px 6px; =
+border-radius: 10px; text-align: center; -webkit-border-radius: 10px; =
+-moz-border-radius: 10px;
+}
+.contactAdPanel1 h5 {
+	background: rgb(50, 132, 50); margin: 0px 0px 10px; padding: 3px; =
+text-align: center; color: rgb(255, 255, 255); display: block; =
+border-top-left-radius: 10px; border-top-right-radius: 10px; =
+-webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: =
+10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: =
+10px;
+}
+.contactAdPanel1 h5 {
+	margin: 0px; padding: 0px 2px; color: rgb(0, 0, 0);
+}
+.contactAdPanel1 h4 {
+	margin: 0px; padding: 0px 10px; color: rgb(51, 51, 51);
+}
+.contactAdPanel1 p {
+	margin: 0px; padding: 0px 2px; color: rgb(0, 0, 255); font-weight: =
+bold;
+}
+.contactAdPanel2 {
+	background: rgb(242, 245, 169); margin: 10px 0px; padding: 0px 0px 5px; =
+border-radius: 10px; text-align: center; -webkit-border-radius: 10px; =
+-moz-border-radius: 10px;
+}
+.contactAdPanel2 h5 {
+	background: rgb(255, 102, 0); margin: 0px 0px 10px; padding: 2px; =
+text-align: center; color: rgb(255, 255, 255); display: block; =
+border-top-left-radius: 8px; border-top-right-radius: 8px; =
+-webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: =
+10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: =
+10px;
+}
+.contactAdPanel2 h5 {
+	margin: 0px; padding: 0px 2px; color: rgb(0, 0, 0);
+}
+.contactAdPanel2 p {
+	margin: 0px; padding: 0px 2px; color: rgb(0, 0, 255); font-weight: =
+bold;
+}
+.sqTabs {
+	margin: 0px 0px 20px !important; padding: 0px 0px 0px 10px !important; =
+height: 30px; border-bottom-color: rgb(250, 250, 210); =
+border-bottom-width: 1px; border-bottom-style: solid;
+}
+.sqTabs li {
+	list-style: none !important; margin: 0px !important; padding: 0px =
+!important; float: left;
+}
+* html .sqTabs li {
+	display: inline;
+}
+.sqTabs li a {
+	background: rgb(232, 49, 92); margin: 0px; padding: 5px 15px; color: =
+rgb(255, 255, 255); line-height: 20px; font-size: 13px; font-weight: =
+700; text-decoration: none; border-top-color: rgba(0, 0, 0, 0.5); =
+border-right-color: rgba(0, 0, 0, 0.5); border-left-color: rgba(0, 0, 0, =
+0.5); border-top-width: 1px; border-right-width: 1px; border-left-width: =
+1px; border-top-style: solid; border-right-style: solid; =
+border-left-style: solid; float: left; border-top-left-radius: 10px; =
+border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px; =
+-webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; =
+-moz-border-radius-topright: 10px;
+}
+.sqTabs li.active a {
+	background: rgb(240, 14, 14); color: rgb(255, 255, 255);
+}
+.tabContent {
+	min-height: 100px;
+}
+.button_example {
+	padding: 6px; border-radius: 5px; border: 1px solid rgb(34, 34, 34); =
+text-align: center; color: rgb(255, 255, 255); font-family: arial, =
+helvetica, sans-serif; font-weight: bold; text-shadow: -1px -1px 0px =
+#222; background-image: -ms-linear-gradient(rgb(34, 34, 34), rgb(34, 34, =
+34)); background-color: rgb(34, 34, 34); -webkit-border-radius: 3px; =
+-moz-border-radius: 3px;
+}
+.button_example:hover {
+	border: 1px solid rgb(54, 61, 76); background-image: =
+-ms-linear-gradient(rgb(75, 84, 106), rgb(44, 53, 75)); =
+background-color: rgb(75, 84, 106);
+}
+
+------=_NextPart_000_0000_01CEF517.0E488650
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://sqlschool.com/styles/anylinkcssmenu.css
+
+.selectedanchor {
+	background: yellow;
+}
+.anylinkcss {
+	background: lightyellow; border-width: 1px 1px 0px; border-style: =
+solid; border-color: black; font: 12px/18px Arial; left: 0px; top: 0px; =
+width: 130px; visibility: hidden; position: absolute; z-index: 100; =
+font-size-adjust: none; font-stretch: normal;
+}
+.anylinkcss ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.anylinkcss ul li a {
+	background: rgb(27, 31, 34); padding: 1px 0px; width: 100%; color: =
+rgb(255, 255, 255); text-indent: 5px; font-weight: bold; =
+text-decoration: none; border-bottom-color: black; border-bottom-width: =
+1px; border-bottom-style: solid; display: block;
+}
+.anylinkcss a:hover {
+	background: rgb(224, 22, 68); color: white;
+}
+.anylinkcsscols {
+	background: rgb(222, 255, 202); font: 12px/normal Arial; padding: 10px; =
+border: 1px solid black; left: 0px; top: 0px; visibility: hidden; =
+position: absolute; z-index: 100; font-size-adjust: none; font-stretch: =
+normal;
+}
+.anylinkcsscols .column {
+	width: 130px; float: left;
+}
+.anylinkcsscols .column ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.anylinkcsscols li {
+	padding-bottom: 3px;
+}
+.anylinkshadow {
+	background: black; left: 0px; top: 0px; visibility: hidden; position: =
+absolute; z-index: 99;
+}
+
+------=_NextPart_000_0000_01CEF517.0E488650
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://sqlschool.com/scripts/anylinkcssmenu.js
+
+//** AnyLink CSS Menu v2.0- (c) Dynamic Drive DHTML code library: =
+http://www.dynamicdrive.com=0A=
+//** Script Download/ instructions page: =
+http://www.dynamicdrive.com/dynamicindex1/anylinkcss.htm=0A=
+//** January 19', 2009: Script Creation date=0A=
+=0A=
+//**May 23rd, 09': v2.1=0A=
+	//1) Automatically adds a "selectedanchor" CSS class to the currrently =
+selected anchor link=0A=
+	//2) For image anchor links, the custom HTML attributes "data-image" =
+and "data-overimage" can be inserted to set the anchor's default and =
+over images.=0A=
+=0A=
+//**June 1st, 09': v2.2=0A=
+	//1) Script now runs automatically after DOM has loaded. =
+anylinkcssmenu.init) can now be called in the HEAD section=0A=
+=0A=
+//**May 23rd, 10': v2.21: Fixes script not firing in IE when inside a =
+frame page=0A=
+=0A=
+if (typeof dd_domreadycheck=3D=3D"undefined") //global variable to =
+detect if DOM is ready=0A=
+	var dd_domreadycheck=3Dfalse=0A=
+=0A=
+var anylinkcssmenu=3D{=0A=
+=0A=
+menusmap: {},=0A=
+preloadimages: [],=0A=
+effects: {delayhide: 200, shadow:{enabled:true, opacity:0.3, depth: [5, =
+5]}, fade:{enabled:true, duration:500}}, //customize menu effects=0A=
+=0A=
+dimensions: {},=0A=
+=0A=
+getoffset:function(what, offsettype){=0A=
+	return (what.offsetParent)? =
+what[offsettype]+this.getoffset(what.offsetParent, offsettype) : =
+what[offsettype]=0A=
+},=0A=
+=0A=
+getoffsetof:function(el){=0A=
+	el._offsets=3D{left:this.getoffset(el, "offsetLeft"), =
+top:this.getoffset(el, "offsetTop"), h: el.offsetHeight}=0A=
+},=0A=
+=0A=
+getdimensions:function(menu){=0A=
+	this.dimensions=3D{anchorw:menu.anchorobj.offsetWidth, =
+anchorh:menu.anchorobj.offsetHeight,=0A=
+		docwidth:(window.innerWidth ||this.standardbody.clientWidth)-20,=0A=
+		docheight:(window.innerHeight ||this.standardbody.clientHeight)-15,=0A=
+		docscrollx:window.pageXOffset || this.standardbody.scrollLeft,=0A=
+		docscrolly:window.pageYOffset || this.standardbody.scrollTop=0A=
+	}=0A=
+	if (!this.dimensions.dropmenuw){=0A=
+		this.dimensions.dropmenuw=3Dmenu.dropmenu.offsetWidth=0A=
+		this.dimensions.dropmenuh=3Dmenu.dropmenu.offsetHeight=0A=
+	}=0A=
+},=0A=
+=0A=
+isContained:function(m, e){=0A=
+	var e=3Dwindow.event || e=0A=
+	var c=3De.relatedTarget || ((e.type=3D=3D"mouseover")? e.fromElement : =
+e.toElement)=0A=
+	while (c && c!=3Dm)try {c=3Dc.parentNode} catch(e){c=3Dm}=0A=
+	if (c=3D=3Dm)=0A=
+		return true=0A=
+	else=0A=
+		return false=0A=
+},=0A=
+=0A=
+setopacity:function(el, value){=0A=
+	el.style.opacity=3Dvalue=0A=
+	if (typeof el.style.opacity!=3D"string"){ //if it's not a string (ie: =
+number instead), it means property not supported=0A=
+		el.style.MozOpacity=3Dvalue=0A=
+		if (el.filters){=0A=
+			=
+el.style.filter=3D"progid:DXImageTransform.Microsoft.alpha(opacity=3D"+ =
+value*100 +")"=0A=
+		}=0A=
+	}=0A=
+},=0A=
+=0A=
+showmenu:function(menuid){=0A=
+	var menu=3Danylinkcssmenu.menusmap[menuid]=0A=
+	clearTimeout(menu.hidetimer)=0A=
+	this.getoffsetof(menu.anchorobj)=0A=
+	this.getdimensions(menu)=0A=
+	var posx=3Dmenu.anchorobj._offsets.left + (menu.orientation=3D=3D"lr"? =
+this.dimensions.anchorw : 0) //base x pos=0A=
+	var posy=3Dmenu.anchorobj._offsets.top+this.dimensions.anchorh - =
+(menu.orientation=3D=3D"lr"? this.dimensions.anchorh : 0)//base y pos=0A=
+	if =
+(posx+this.dimensions.dropmenuw+this.effects.shadow.depth[0]>this.dimensi=
+ons.docscrollx+this.dimensions.docwidth){ //drop left instead?=0A=
+		posx=3Dposx-this.dimensions.dropmenuw + (menu.orientation=3D=3D"lr"? =
+-this.dimensions.anchorw : this.dimensions.anchorw)=0A=
+	}=0A=
+	if =
+(posy+this.dimensions.dropmenuh>this.dimensions.docscrolly+this.dimension=
+s.docheight){  //drop up instead?=0A=
+		posy=3DMath.max(posy-this.dimensions.dropmenuh - =
+(menu.orientation=3D=3D"lr"? -this.dimensions.anchorh : =
+this.dimensions.anchorh), this.dimensions.docscrolly) //position above =
+anchor or window's top edge=0A=
+	}=0A=
+	if (this.effects.fade.enabled){=0A=
+		this.setopacity(menu.dropmenu, 0) //set opacity to 0 so menu appears =
+hidden initially=0A=
+		if (this.effects.shadow.enabled)=0A=
+			this.setopacity(menu.shadow, 0) //set opacity to 0 so shadow appears =
+hidden initially=0A=
+	}=0A=
+	menu.dropmenu.setcss({left:posx+'px', top:posy+'px', =
+visibility:'visible'})=0A=
+	if (this.effects.shadow.enabled)=0A=
+		=
+menu.shadow.setcss({left:posx+anylinkcssmenu.effects.shadow.depth[0]+'px'=
+, top:posy+anylinkcssmenu.effects.shadow.depth[1]+'px', =
+visibility:'visible'})=0A=
+	if (this.effects.fade.enabled){=0A=
+		clearInterval(menu.animatetimer)=0A=
+		menu.curanimatedegree=3D0=0A=
+		menu.starttime=3Dnew Date().getTime() //get time just before animation =
+is run=0A=
+		=
+menu.animatetimer=3DsetInterval(function(){anylinkcssmenu.revealmenu(menu=
+id)}, 20)=0A=
+	}=0A=
+},=0A=
+=0A=
+revealmenu:function(menuid){=0A=
+	var menu=3Danylinkcssmenu.menusmap[menuid]=0A=
+	var elapsed=3Dnew Date().getTime()-menu.starttime //get time animation =
+has run=0A=
+	if (elapsed<this.effects.fade.duration){=0A=
+		this.setopacity(menu.dropmenu, menu.curanimatedegree)=0A=
+		if (this.effects.shadow.enabled)=0A=
+			this.setopacity(menu.shadow, =
+menu.curanimatedegree*this.effects.shadow.opacity)=0A=
+	}=0A=
+	else{=0A=
+		clearInterval(menu.animatetimer)=0A=
+		this.setopacity(menu.dropmenu, 1)=0A=
+		menu.dropmenu.style.filter=3D""=0A=
+	}=0A=
+	=
+menu.curanimatedegree=3D(1-Math.cos((elapsed/this.effects.fade.duration)*=
+Math.PI)) / 2=0A=
+},=0A=
+=0A=
+setcss:function(param){=0A=
+	for (prop in param){=0A=
+		this.style[prop]=3Dparam[prop]=0A=
+	}=0A=
+},=0A=
+=0A=
+setcssclass:function(el, targetclass, action){=0A=
+	var needle=3Dnew RegExp("(^|\\s+)"+targetclass+"($|\\s+)", "ig")=0A=
+	if (action=3D=3D"check")=0A=
+		return needle.test(el.className)=0A=
+	else if (action=3D=3D"remove")=0A=
+		el.className=3Del.className.replace(needle, "")=0A=
+	else if (action=3D=3D"add" && !needle.test(el.className))=0A=
+		el.className+=3D" "+targetclass=0A=
+},=0A=
+=0A=
+hidemenu:function(menuid){=0A=
+	var menu=3Danylinkcssmenu.menusmap[menuid]=0A=
+	clearInterval(menu.animatetimer)=0A=
+	menu.dropmenu.setcss({visibility:'hidden', left:0, top:0})=0A=
+	menu.shadow.setcss({visibility:'hidden', left:0, top:0})=0A=
+},=0A=
+=0A=
+getElementsByClass:function(targetclass){=0A=
+	if (document.querySelectorAll)=0A=
+		return document.querySelectorAll("."+targetclass)=0A=
+	else{=0A=
+		var classnameRE=3Dnew RegExp("(^|\\s+)"+targetclass+"($|\\s+)", "i") =
+//regular expression to screen for classname=0A=
+		var pieces=3D[]=0A=
+		var alltags=3Ddocument.all? document.all : =
+document.getElementsByTagName("*")=0A=
+		for (var i=3D0; i<alltags.length; i++){=0A=
+			if (typeof alltags[i].className=3D=3D"string" && =
+alltags[i].className.search(classnameRE)!=3D-1)=0A=
+				pieces[pieces.length]=3Dalltags[i]=0A=
+		}=0A=
+		return pieces=0A=
+	}=0A=
+},=0A=
+=0A=
+addEvent:function(targetarr, functionref, tasktype){=0A=
+	if (targetarr.length>0){=0A=
+		var target=3Dtargetarr.shift()=0A=
+		if (target.addEventListener)=0A=
+			target.addEventListener(tasktype, functionref, false)=0A=
+		else if (target.attachEvent)=0A=
+			target.attachEvent('on'+tasktype, function(){return =
+functionref.call(target, window.event)})=0A=
+		this.addEvent(targetarr, functionref, tasktype)=0A=
+	}=0A=
+},=0A=
+=0A=
+domready:function(functionref){ //based on code from the jQuery library=0A=
+	if (dd_domreadycheck){=0A=
+		functionref()=0A=
+		return=0A=
+	}=0A=
+	// Mozilla, Opera and webkit nightlies currently support this event=0A=
+	if (document.addEventListener) {=0A=
+		// Use the handy event callback=0A=
+		document.addEventListener("DOMContentLoaded", function(){=0A=
+			document.removeEventListener("DOMContentLoaded", arguments.callee, =
+false )=0A=
+			functionref();=0A=
+			dd_domreadycheck=3Dtrue=0A=
+		}, false )=0A=
+	}=0A=
+	else if (document.attachEvent){=0A=
+		// If IE and not an iframe=0A=
+		// continually check to see if the document is ready=0A=
+		if ( document.documentElement.doScroll && window =3D=3D window.top) =
+(function(){=0A=
+			if (dd_domreadycheck) return=0A=
+			try{=0A=
+				// If IE is used, use the trick by Diego Perini=0A=
+				// http://javascript.nwbox.com/IEContentLoaded/=0A=
+				document.documentElement.doScroll("left")=0A=
+			}catch(error){=0A=
+				setTimeout( arguments.callee, 0)=0A=
+				return;=0A=
+			}=0A=
+			//and execute any waiting functions=0A=
+			functionref();=0A=
+			dd_domreadycheck=3Dtrue=0A=
+		})();=0A=
+	}=0A=
+	if (document.attachEvent && parent.length>0) //account for page being =
+in IFRAME, in which above doesn't fire in IE=0A=
+		this.addEvent([window], function(){functionref()}, "load");=0A=
+},=0A=
+=0A=
+addState:function(anchorobj, state){=0A=
+	if (anchorobj.getAttribute('data-image')){=0A=
+		var imgobj=3D(anchorobj.tagName=3D=3D"IMG")? anchorobj : =
+anchorobj.getElementsByTagName('img')[0]=0A=
+		if (imgobj){=0A=
+			imgobj.src=3D(state=3D=3D"add")? =
+anchorobj.getAttribute('data-overimage') : =
+anchorobj.getAttribute('data-image')=0A=
+		}=0A=
+	}=0A=
+	else=0A=
+		anylinkcssmenu.setcssclass(anchorobj, "selectedanchor", state)=0A=
+},=0A=
+=0A=
+=0A=
+setupmenu:function(targetclass, anchorobj, pos){=0A=
+	this.standardbody=3D(document.compatMode=3D=3D"CSS1Compat")? =
+document.documentElement : document.body=0A=
+	var relattr=3Danchorobj.getAttribute("rel")=0A=
+	var dropmenuid=3Drelattr.replace(/\[(\w+)\]/, '')=0A=
+	var menu=3Dthis.menusmap[targetclass+pos]=3D{=0A=
+		id: targetclass+pos,=0A=
+		anchorobj: anchorobj,	=0A=
+		dropmenu: document.getElementById(dropmenuid),=0A=
+		revealtype: (relattr.length!=3Ddropmenuid.length && =
+RegExp.$1=3D=3D"click")? "click" : "mouseover",=0A=
+		orientation: anchorobj.getAttribute("rev")=3D=3D"lr"? "lr" : "ud",=0A=
+		shadow: document.createElement("div")=0A=
+	}=0A=
+	menu.anchorobj._internalID=3Dtargetclass+pos=0A=
+	menu.anchorobj._isanchor=3Dtrue=0A=
+	menu.dropmenu._internalID=3Dtargetclass+pos=0A=
+	menu.shadow._internalID=3Dtargetclass+pos=0A=
+	menu.shadow.className=3D"anylinkshadow"=0A=
+	document.body.appendChild(menu.dropmenu) //move drop down div to end of =
+page=0A=
+	document.body.appendChild(menu.shadow)=0A=
+	menu.dropmenu.setcss=3Dthis.setcss=0A=
+	menu.shadow.setcss=3Dthis.setcss=0A=
+	menu.shadow.setcss({width: menu.dropmenu.offsetWidth+"px", =
+height:menu.dropmenu.offsetHeight+"px"})=0A=
+	this.setopacity(menu.shadow, this.effects.shadow.opacity)=0A=
+	this.addEvent([menu.anchorobj, menu.dropmenu, menu.shadow], =
+function(e){ //MOUSEOVER event for anchor, dropmenu, shadow=0A=
+		var menu=3Danylinkcssmenu.menusmap[this._internalID]=0A=
+		if (this._isanchor && menu.revealtype=3D=3D"mouseover" && =
+!anylinkcssmenu.isContained(this, e)){ //event for anchor=0A=
+			anylinkcssmenu.showmenu(menu.id)=0A=
+			anylinkcssmenu.addState(this, "add")=0A=
+		}=0A=
+		else if (typeof this._isanchor=3D=3D"undefined"){ //event for drop =
+down menu and shadow=0A=
+			clearTimeout(menu.hidetimer)=0A=
+		}=0A=
+	}, "mouseover")=0A=
+	this.addEvent([menu.anchorobj, menu.dropmenu, menu.shadow], =
+function(e){ //MOUSEOUT event for anchor, dropmenu, shadow=0A=
+		if (!anylinkcssmenu.isContained(this, e)){=0A=
+			var menu=3Danylinkcssmenu.menusmap[this._internalID]=0A=
+			menu.hidetimer=3DsetTimeout(function(){=0A=
+				anylinkcssmenu.addState(menu.anchorobj, "remove")=0A=
+				anylinkcssmenu.hidemenu(menu.id)=0A=
+			}, anylinkcssmenu.effects.delayhide)=0A=
+		}=0A=
+	}, "mouseout")=0A=
+	this.addEvent([menu.anchorobj, menu.dropmenu], function(e){ //CLICK =
+event for anchor, dropmenu=0A=
+		var menu=3Danylinkcssmenu.menusmap[this._internalID]=0A=
+		if ( this._isanchor && menu.revealtype=3D=3D"click"){=0A=
+			if (menu.dropmenu.style.visibility=3D=3D"visible")=0A=
+				anylinkcssmenu.hidemenu(menu.id)=0A=
+			else{=0A=
+				anylinkcssmenu.addState(this, "add")=0A=
+				anylinkcssmenu.showmenu(menu.id)=0A=
+			}=0A=
+			if (e.preventDefault)=0A=
+				e.preventDefault()=0A=
+			return false=0A=
+		}=0A=
+		else=0A=
+			=
+menu.hidetimer=3DsetTimeout(function(){anylinkcssmenu.hidemenu(menu.id)},=
+ anylinkcssmenu.effects.delayhide)=0A=
+	}, "click")=0A=
+},=0A=
+=0A=
+init:function(targetclass){=0A=
+	this.domready(function(){anylinkcssmenu.trueinit(targetclass)})=0A=
+},=0A=
+=0A=
+trueinit:function(targetclass){=0A=
+	var anchors=3Dthis.getElementsByClass(targetclass)=0A=
+	var preloadimages=3Dthis.preloadimages=0A=
+	for (var i=3D0; i<anchors.length; i++){=0A=
+		if (anchors[i].getAttribute('data-image')){ //preload anchor image?=0A=
+			preloadimages[preloadimages.length]=3Dnew Image()=0A=
+			=
+preloadimages[preloadimages.length-1].src=3Danchors[i].getAttribute('data=
+-image')=0A=
+		}=0A=
+		if (anchors[i].getAttribute('data-overimage')){ //preload anchor image?=0A=
+			preloadimages[preloadimages.length]=3Dnew Image()=0A=
+			=
+preloadimages[preloadimages.length-1].src=3Danchors[i].getAttribute('data=
+-overimage')=0A=
+		}=0A=
+		this.setupmenu(targetclass, anchors[i], i)=0A=
+	}=0A=
+}=0A=
+=0A=
+}
+------=_NextPart_000_0000_01CEF517.0E488650--
